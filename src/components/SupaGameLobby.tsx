@@ -228,7 +228,16 @@ export function SupaGameLobby({ onGameReady }: SupaGameLobbyProps) {
             <Button fullWidth variant="outlined" onClick={handleJoinGame} disabled={!playerName || !roomCode} size="large">
               Join Game
             </Button>
-            
+            <Button
+              fullWidth
+              variant="outlined"
+              href="https://docs.google.com/document/d/1sHcjro0td55FG5cjSgVrwQIDaSR3huxNl2_NuyyCq_0/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              size="large"
+            >
+              Get prompts
+            </Button>
             {roomCode && (
               <Typography sx={{ mt: 2, alignSelf: 'center', color: 'text.secondary' }}>
                 Room Code: <b>{roomCode}</b>
