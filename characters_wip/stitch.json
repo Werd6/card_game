@@ -1,0 +1,58 @@
+{
+    "id": "stitch-deck-1",
+    "name": "Stitch",
+    "author": "ClashGPT",
+    "version": "1.0.0",
+    "characters": [
+        {
+            "id": "stitch-1",
+            "name": "Stitch",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Stitch_%28Lilo_%26_Stitch%29.svg/640px-Stitch_%28Lilo_%26_Stitch%29.svg.png",
+            "hp": 20,
+            "size": "small",
+            "traits": [
+                "Alien",
+                "Beast",
+                "Scrapper"
+            ]
+        }
+    ],
+    "cards": [
+      { "id": 1,  "type": "combat",  "attack": 0, "defense": 8 },
+      { "id": 2,  "type": "combat",  "attack": 0, "defense": 8 },
+      { "id": 3,  "type": "combat",  "attack": 4, "defense": 2 },
+      { "id": 4,  "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 5,  "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 6,  "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 7,  "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 8,  "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 9,  "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 10, "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 11, "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 12, "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 13, "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 14, "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 15, "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 16, "type": "combat",  "attack": 3, "defense": 3 },
+  
+      { "id": 17, "type": "special", "name": "Ceiling Crawl",         "rulesText": "cost 1MP — Stitch moves up to 3 spaces ignoring terrain." },
+      { "id": 18, "type": "special", "name": "Genetic Reflexes",      "rulesText": "cost 1MP — Cancel an attack that just hit Stitch, then move 1 space." },
+      { "id": 19, "type": "special", "name": "Plasma Spit",           "rulesText": "cost 1MP — Push an enemy 1 space; Stitch may follow into the vacated space." },
+  
+      { "id": 20, "type": "special", "name": "Berserker Bite",        "rulesText": "cost 1PP — Deal 3 damage to an adjacent enemy." },
+      { "id": 21, "type": "special", "name": "Talon Slash",           "rulesText": "cost 1PP — Deal 2 damage; if the enemy is damaged, draw 1 card." },
+      { "id": 22, "type": "special", "name": "Pounce",                "rulesText": "cost 1MP — Leap 2 spaces to an enemy and become adjacent." },
+  
+      { "id": 23, "type": "special", "name": "Improvised Blaster",    "rulesText": "cost 1MP — Range 2; deal 1 damage and push the target 1 space." },
+      { "id": 24, "type": "special", "name": "Dirty Tricks",          "rulesText": "cost 2MP — Swap positions with an adjacent enemy; that enemy's next attack is –2." },
+      { "id": 25, "type": "special", "name": "Sneaky Taunt",          "rulesText": "cost 1SP — Target enemy discards a random card." },
+  
+      { "id": 26, "type": "special", "name": "Quadruple-Arms Maul",   "rulesText": "cost 1PP/2MP — Move 2 spaces, then deal 3 damage to each adjacent enemy." },
+      { "id": 27, "type": "special", "name": "Roll & Slam",           "rulesText": "cost 1PP/1MP — Move 1 space and deal 2 damage; Stitch takes no retaliation." },
+      { "id": 28, "type": "special", "name": "360 Spin Kick",         "rulesText": "cost 1SP/1MP — Push each adjacent enemy 1 space away." },
+  
+      { "id": 29, "type": "special", "name": "Experiment 626 Rampage","rulesText": "cost 1PP/1SP/2MP — Deal 4 damage to one enemy; then Stitch may move 3 spaces." },
+      { "id": 30, "type": "special", "name": "Small but Savage",      "rulesText": "cost 2MP — Move through a larger enemy's space; that enemy takes 1 damage and is stunned this turn." }
+    ]
+  }
+  

@@ -1,0 +1,51 @@
+{
+    "id": "jellykrarken-deck",
+    "name": "JellyKrarken Deck",
+    "author": "Werd Web Dev",
+    "version": "1.0.0",
+    "description": "Epic Duels–compatible deck for the cosmic leviathan JellyKrarken.",
+    "characters": [
+      {
+        "id": "jellykrarken",
+        "name": "JellyKrarken",
+        "imageUrl": "https://goblincoach.com/wp-content/uploads/2023/04/jethrish-front-image.jpg",
+        "hp": 24,
+        "size": "huge",
+        "traits": ["Eldritch", "Ocean", "Monster"]
+      }
+    ],
+    "cards": [
+      { "id": 1,  "owner": "jellykrarken", "type": "combat",  "attack": 6, "defense": 0 },
+      { "id": 2,  "owner": "jellykrarken", "type": "combat",  "attack": 5, "defense": 2 },
+      { "id": 3,  "owner": "jellykrarken", "type": "combat",  "attack": 4, "defense": 1 },
+      { "id": 4,  "owner": "jellykrarken", "type": "combat",  "attack": 4, "defense": 2 },
+      { "id": 5,  "owner": "jellykrarken", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 6,  "owner": "jellykrarken", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 7,  "owner": "jellykrarken", "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 8,  "owner": "jellykrarken", "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 9,  "owner": "jellykrarken", "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 10, "owner": "jellykrarken", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 11, "owner": "jellykrarken", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 12, "owner": "jellykrarken", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 13, "owner": "jellykrarken", "type": "combat",  "attack": 1, "defense": 3 },
+      { "id": 14, "owner": "jellykrarken", "type": "combat",  "attack": 1, "defense": 4 },
+      { "id": 15, "owner": "jellykrarken", "type": "combat",  "attack": 1, "defense": 4 },
+      { "id": 16, "owner": "jellykrarken", "type": "combat",  "attack": 0, "defense": 8 },
+      
+      { "id": 17, "owner": "jellykrarken", "type": "special", "name": "Reality Rends",          "rulesText": "Deal 4 damage to every enemy in a 3-hex burst; those hit become Vulnerable." },
+      { "id": 18, "owner": "jellykrarken", "type": "special", "name": "Cosmic Undulation",      "rulesText": "Gain a 6-point shield and draw 1 card." },
+      { "id": 19, "owner": "jellykrarken", "type": "special", "name": "Eldritch Undertow",      "rulesText": "Pull one enemy 3 squares, then teleport JellyKrarken 3 squares." },
+      { "id": 20, "owner": "jellykrarken", "type": "special", "name": "Tidal Crush",            "rulesText": "Place a 2×2 watery wall that blocks line-of-sight for 1 round and deal 4 damage to foes it touches." },
+      { "id": 21, "owner": "jellykrarken", "type": "special", "name": "Saltwater Surge",        "rulesText": "Heal 4 HP and gain Regenerating." },
+      { "id": 22, "owner": "jellykrarken", "type": "special", "name": "Riptide Shield",         "rulesText": "Gain Armor and deal 2 damage to all adjacent enemies." },
+      { "id": 23, "owner": "jellykrarken", "type": "special", "name": "Predatory Lunge",        "rulesText": "Move 4 squares ignoring terrain, then deal 4 damage to an adjacent enemy." },
+      { "id": 24, "owner": "jellykrarken", "type": "special", "name": "Terrifying Roar",        "rulesText": "Opponent discards 1 random card and is Stunned." },
+      { "id": 25, "owner": "jellykrarken", "type": "special", "name": "Gnashing Tentacles",     "rulesText": "Deal 3 damage to up to two adjacent enemies and inflict Bleeding." },
+      { "id": 26, "owner": "jellykrarken", "type": "special", "name": "Maelstrom of Madness",   "rulesText": "Create a 2×2 whirlpool; enemies entering take 3 damage and become Immobilized." },
+      { "id": 27, "owner": "jellykrarken", "type": "special", "name": "Drag to the Deep",       "rulesText": "Pull one enemy 3 squares, deal 4 damage, and inflict Blinded." },
+      { "id": 28, "owner": "jellykrarken", "type": "special", "name": "Eldritch Frenzy",        "rulesText": "Deal 4 damage; JellyKrarken gains Focused." },
+      { "id": 29, "owner": "jellykrarken", "type": "special", "name": "Kraken of the Void",     "rulesText": "Summon three 3-HP Void Tentacles adjacent; teleport to any water terrain, then each enemy within 3 squares takes 3 damage." },
+      { "id": 30, "owner": "jellykrarken", "type": "special", "name": "Call of the Abyss",      "rulesText": "Look at the top 3 cards of your deck, keep 1, return the rest; each opponent chooses and discards 1 card." }
+    ]
+  }
+  

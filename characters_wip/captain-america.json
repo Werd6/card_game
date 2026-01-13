@@ -1,0 +1,63 @@
+{
+    "id": "captain-america-winter-soldier-deck",
+    "name": "Captain America & Winter Soldier Deck",
+    "author": "Werd Web Dev",
+    "version": "1.0.0",
+    "description": "Epic Duels–compatible deck for Captain America and the Winter Soldier.",
+    "characters": [
+      {
+        "id": "captain-america",
+        "name": "Captain America",
+        "imageUrl": "https://www.superherotoystore.com/cdn/shop/articles/captain-america-marvel-comics_1200x.webp?v=1696315590",
+        "hp": 22,
+        "size": "medium",
+        "traits": ["Protector", "Leader", "Warrior"],
+        "ranged": false
+      },
+      {
+        "id": "winter-soldier",
+        "name": "Winter Soldier",
+        "imageUrl": "https://roguewatson.com/wp-content/uploads/2017/07/winter-soldier-banner.jpg",
+        "hp": 13,
+        "size": "medium",
+        "traits": ["Arsenal", "Cybernetic", "Loner"],
+        "ranged": true
+      }
+    ],
+    "cards": [
+      { "id": 1,  "owner": "captain-america", "type": "combat",  "attack": 6, "defense": 0 },
+      { "id": 2,  "owner": "captain-america", "type": "combat",  "attack": 5, "defense": 1 },
+      { "id": 3,  "owner": "winter-soldier",  "type": "combat",  "attack": 5, "defense": 1 },
+      { "id": 4,  "owner": "captain-america", "type": "combat",  "attack": 4, "defense": 2 },
+      { "id": 5,  "owner": "winter-soldier",  "type": "combat",  "attack": 4, "defense": 2 },
+      { "id": 6,  "owner": "captain-america", "type": "combat",  "attack": 4, "defense": 3 },
+      { "id": 7,  "owner": "winter-soldier",  "type": "combat",  "attack": 4, "defense": 4 },
+      { "id": 8,  "owner": "winter-soldier",  "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 9,  "owner": "captain-america", "type": "combat",  "attack": 3, "defense": 4 },
+      { "id": 10, "owner": "captain-america", "type": "combat",  "attack": 3, "defense": 4 },
+      { "id": 11, "owner": "winter-soldier",  "type": "combat",  "attack": 3, "defense": 5 },
+      { "id": 12, "owner": "captain-america", "type": "combat",  "attack": 1, "defense": 5 },
+      { "id": 13, "owner": "winter-soldier",  "type": "combat",  "attack": 1, "defense": 5 },
+      { "id": 14, "owner": "captain-america", "type": "combat",  "attack": 1, "defense": 5 },
+      { "id": 15, "owner": "captain-america", "type": "combat",  "attack": 0, "defense": 6 },
+      { "id": 16, "owner": "winter-soldier",  "type": "combat",  "attack": 0, "defense": 6 },
+  
+      { "id": 17, "owner": "captain-america", "type": "special", "name": "Fortified Shield",      "rulesText": "Reduce the next 2 damage to Captain America or an adjacent ally until your next turn." },
+      { "id": 18, "owner": "captain-america", "type": "special", "name": "Shield Intercept",      "rulesText": "Move up to 2 squares toward a targeted ally and become the new target of that attack." },
+      { "id": 19, "owner": "captain-america", "type": "special", "name": "Rallying Command",      "rulesText": "Winter Soldier draws 2 cards and gains +1 attack die on his next strike." },
+      { "id": 20, "owner": "captain-america", "type": "special", "name": "Strategic Redeploy",    "rulesText": "Move Winter Soldier up to 3 squares; he then draws 1 card." },
+      { "id": 21, "owner": "captain-america", "type": "special", "name": "Precision Strike",      "rulesText": "Add +3 attack dice to Captain America's next attack; ignore defense bonuses." },
+      { "id": 22, "owner": "captain-america", "type": "special", "name": "Shield Ricochet",       "rulesText": "Make a ranged attack that bounces to a second enemy within 2 squares." },
+      { "id": 23, "owner": "captain-america", "type": "special", "name": "Avengers Assemble",     "rulesText": "Both heroes draw 1 card, move 1 square, and may each make 1 basic attack." },
+  
+      { "id": 24, "owner": "winter-soldier",  "type": "special", "name": "Rapid Fire",            "rulesText": "Add +2 attack dice to Winter Soldier's next ranged attack." },
+      { "id": 25, "owner": "winter-soldier",  "type": "special", "name": "Adaptive Arsenal",      "rulesText": "Retrieve one combat card from your discard pile to your hand before attacking." },
+      { "id": 26, "owner": "winter-soldier",  "type": "special", "name": "Tactical Scan",         "rulesText": "Look at the top 3 cards of any deck, reorder them, then draw 1 card." },
+      { "id": 27, "owner": "winter-soldier",  "type": "special", "name": "Bionic Lunge",          "rulesText": "Move up to 3 squares and make a melee attack with +1 attack die." },
+      { "id": 28, "owner": "winter-soldier",  "type": "special", "name": "Ghost Protocol",        "rulesText": "If Winter Soldier isn't adjacent to allies, he gains +1 defense until your next turn." },
+      { "id": 29, "owner": "winter-soldier",  "type": "special", "name": "Silent Strike",         "rulesText": "If Winter Soldier is alone, add +3 attack dice." },
+  
+      { "id": 30, "owner": "captain-america",            "type": "special", "name": "Brothers in Arms",      "rulesText": "Playable by either figure: until end of turn, when one hero attacks, the other may immediately play a combat card as if adjacent." }
+    ]
+  }
+  

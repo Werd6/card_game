@@ -1,0 +1,62 @@
+{
+  "id": "saitama-genos-deck",
+  "name": "Saitama & Genos Deck",
+  "author": "ChatGPT",
+  "version": "1.0.0",
+  "description": "Epic Duels–compatible deck for Saitama and Genos.",
+  "characters": [
+    {
+      "id": "saitama",
+      "name": "Saitama",
+      "imageUrl": "https://preview.redd.it/is-there-a-possibility-that-saitama-will-reconnect-with-his-v0-a68r1dfui7ce1.jpeg?width=640&crop=smart&auto=webp&s=4978fbcae444a1e6e888367486a04bfb2e319b5b",
+      "hp": 13,
+      "size": "medium",
+      "traits": ["Indestructible", "Anime", "One Punch"],
+      "ranged": false
+    },
+    {
+      "id": "genos",
+      "name": "Genos",
+      "imageUrl": "https://images5.alphacoders.com/654/thumb-1920-654231.jpg",
+      "hp": 10,
+      "size": "medium",
+      "traits": ["Cybernetic", "Blaster", "Protector"],
+      "ranged": true
+    }
+  ],
+  "cards": [
+    { "id": 1, "owner": "saitama", "type": "combat", "attack": 6, "defense": 0 },
+    { "id": 2, "owner": "saitama", "type": "combat", "attack": 5, "defense": 1 },
+    { "id": 3, "owner": "genos",   "type": "combat", "attack": 5, "defense": 2 },
+    { "id": 4, "owner": "saitama", "type": "combat", "attack": 4, "defense": 2 },
+    { "id": 5, "owner": "genos",   "type": "combat", "attack": 4, "defense": 3 },
+    { "id": 6, "owner": "saitama", "type": "combat", "attack": 4, "defense": 3 },
+    { "id": 7, "owner": "saitama", "type": "combat", "attack": 3, "defense": 2 },
+    { "id": 8, "owner": "genos",   "type": "combat", "attack": 3, "defense": 2 },
+    { "id": 9, "owner": "saitama", "type": "combat", "attack": 3, "defense": 3 },
+    { "id": 10, "owner": "genos",  "type": "combat", "attack": 3, "defense": 3 },
+    { "id": 11, "owner": "genos",  "type": "combat", "attack": 2, "defense": 2 },
+    { "id": 12, "owner": "saitama", "type": "combat", "attack": 2, "defense": 3 },
+    { "id": 13, "owner": "genos",  "type": "combat", "attack": 2, "defense": 3 },
+    { "id": 14, "owner": "genos",  "type": "combat", "attack": 2, "defense": 3 },
+    { "id": 15, "owner": "saitama", "type": "combat", "attack": 1, "defense": 4 },
+    { "id": 16, "owner": "saitama", "type": "combat", "attack": 1, "defense": 5 },
+
+    { "id": 17, "owner": "saitama", "type": "special", "name": "Serious Face", "rulesText": "cost 1SP — Play when Saitama would take damage: gain Armor, reducing the next damage by 3." },
+    { "id": 18, "owner": "saitama", "type": "special", "name": "Caped Baldy Stroll", "rulesText": "cost 1MP — Saitama moves up to 4 squares." },
+    { "id": 19, "owner": "saitama", "type": "special", "name": "Comical Timing", "rulesText": "cost 1MP — Swap places with an ally within 4 squares." },
+    { "id": 20, "owner": "saitama", "type": "special", "name": "Discount Obsession", "rulesText": "cost 1MP — Push one enemy 3 squares toward Saitama." },
+    { "id": 21, "owner": "saitama", "type": "special", "name": "ONE PUNCH!!!", "rulesText": "cost 4PP — Deal 6 damage to an adjacent enemy." },
+    { "id": 22, "owner": "saitama", "type": "special", "name": "Consecutive Normal Punches", "rulesText": "cost 2PP/1MP — Deal 3 damage to up to two adjacent enemies and push each 1 square away." },
+    { "id": 23, "owner": "saitama", "type": "special", "name": "Serious Series: Serious Punch", "rulesText": "cost 5PP — Deal 8 damage to any enemy; it becomes Vulnerable until its next turn ends." },
+
+    { "id": 24, "owner": "genos", "type": "special", "name": "Rapid Upgrades", "rulesText": "cost 2PP/1MP — Genos shifts 2 squares, gains Empowered, then deals 3 damage to an adjacent enemy." },
+    { "id": 25, "owner": "genos", "type": "special", "name": "Augmented Aim", "rulesText": "cost 1SP/1MP — Genos moves 2 squares; his next ranged attack this turn gains +2 damage (Focused)." },
+    { "id": 26, "owner": "genos", "type": "special", "name": "Incineration Cannon", "rulesText": "cost 3PP — Deal 5 damage to an enemy within 6 squares and inflict Bleeding." },
+    { "id": 27, "owner": "genos", "type": "special", "name": "Rocket Barrage", "rulesText": "cost 2PP — Deal 3 damage to up to two enemies within 4 squares." },
+    { "id": 28, "owner": "genos", "type": "special", "name": "Bodyguard Protocol", "rulesText": "cost 1SP/1MP — Play when Saitama is targeted: Genos swaps positions with him and gains Armor." },
+    { "id": 29, "owner": "genos", "type": "special", "name": "Tactical Evac", "rulesText": "cost 2MP — Genos and an adjacent ally each move up to 4 squares." },
+
+    { "id": 30, "owner": "saitama", "type": "special", "name": "Master & Disciple Combo", "rulesText": "cost 2PP/1MP — Deal 4 damage to an enemy within 2 squares of Genos; then Saitama may move adjacent to that enemy." }
+  ]
+}

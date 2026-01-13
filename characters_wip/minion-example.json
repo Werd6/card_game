@@ -1,0 +1,50 @@
+{
+  "id": "minion-example",
+  "name": "Minion Example Deck",
+  "author": "Example Author",
+  "version": "1.0.0",
+  "description": "A deck demonstrating the minion system with multiple instances of the same character",
+  "characters": [
+    {
+      "id": "soldier",
+      "name": "Soldier",
+      "imageUrl": "https://example.com/soldier.jpg",
+      "hp": 15,
+      "size": "medium",
+      "traits": ["military", "disciplined"],
+      "minionCount": 3
+    },
+    {
+      "id": "commander",
+      "name": "Commander",
+      "imageUrl": "https://example.com/commander.jpg",
+      "hp": 25,
+      "size": "large",
+      "traits": ["leadership", "tactical"],
+      "minionCount": 1
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "type": "combat",
+      "attack": 5,
+      "defense": 3,
+      "owner": "soldier"
+    },
+    {
+      "id": 2,
+      "type": "combat",
+      "attack": 4,
+      "defense": 4,
+      "owner": "soldier"
+    },
+    {
+      "id": 3,
+      "type": "special",
+      "name": "Rally the Troops",
+      "rulesText": "All your Soldier characters gain +2 attack until end of turn.",
+      "owner": "commander"
+    }
+  ]
+} 

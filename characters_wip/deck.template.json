@@ -1,0 +1,22 @@
+{
+  "id": "template-deck",
+  "name": "Template Deck",
+  "author": "Your Name",
+  "version": "1.0.0",
+  "description": "A template for creating new decks.",
+  "characters": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "imageUrl": "https://placehold.co/150x150/1e293b/ffffff?text=H",
+      "hp": 20,
+      "size": "medium",
+      "traits": ["Brave", "Leader", "Swordmaster"]
+    }
+  ],
+  "cards": [
+    { "id": 1, "owner": "hero", "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 2, "owner": "hero", "type": "combat", "attack": 2, "defense": 1 },
+    { "id": 3, "owner": "hero", "type": "special", "name": "Empty Special", "rulesText": "rules text for the special card" }
+  ]
+}

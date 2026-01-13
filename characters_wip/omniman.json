@@ -1,0 +1,54 @@
+{
+    "id": "omni-man-deck",
+    "name": "Omni-Man Deck",
+    "author": "ChatGPT",
+    "version": "1.0.0",
+    "characters": [
+        {
+            "id": "omniman-1",
+            "name": "Omni-Man",
+            "imageUrl": "https://static.wikia.nocookie.net/villains/images/2/2e/Omni-Man_Invincible.png",
+            "hp": 25,
+            "size": "huge",
+            "traits": [
+                "Titan",
+                "Villainous",
+                "Warrior"
+            ]
+        }
+    ],
+    "cards": [
+      { "id": 1,  "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 2,  "type": "combat",  "attack": 4, "defense": 3 },
+      { "id": 3,  "type": "combat",  "attack": 4, "defense": 4 },
+      { "id": 4,  "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 5,  "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 6,  "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 7,  "type": "combat",  "attack": 3, "defense": 4 },
+      { "id": 8,  "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 9,  "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 10, "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 11, "type": "combat",  "attack": 5, "defense": 1 },
+      { "id": 12, "type": "combat",  "attack": 1, "defense": 2 },
+      { "id": 13, "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 14, "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 15, "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 16, "type": "combat",  "attack": 6, "defense": 0 },
+  
+      { "id": 17, "type": "special", "name": "Planetary Decimation",  "rulesText": "Deal massive unblockable damage to every adjacent enemy." },
+      { "id": 18, "type": "special", "name": "Invincible Grip",       "rulesText": "Grab a target; they cannot move or attack you until they discard 2 cards, then drag them 1 space." },
+      { "id": 19, "type": "special", "name": "Skyquake Crash",        "rulesText": "Leap anywhere; landing deals 3 damage to all figures there and knocks them back 1." },
+      { "id": 20, "type": "special", "name": "Merciless Beatdown",    "rulesText": "Make three separate 3-damage strikes; if any hit, draw 1 card." },
+      { "id": 21, "type": "special", "name": "Callous Calculation",   "rulesText": "Rearrange up to 3 figures within 3 spaces; each moved figure takes 1 damage." },
+      { "id": 22, "type": "special", "name": "Cruel Lesson",          "rulesText": "Enemy discards 2 random cards and takes 2 damage; you may move 2 spaces." },
+      { "id": 23, "type": "special", "name": "Combat Mastery",        "rulesText": "Until your next turn, you gain +2 attack and defense on all rolls." },
+      { "id": 24, "type": "special", "name": "Focused Counter",       "rulesText": "Cancel an enemy special; immediately move adjacent and strike for 3 damage." },
+      { "id": 25, "type": "special", "name": "Tactical Feint",        "rulesText": "Swap places with a figure within 4 spaces; that figure is stunned." },
+      { "id": 26, "type": "special", "name": "Subjugate the Weak",    "rulesText": "All enemies with 3 or fewer cards discard 1 or lose 2 movement next turn." },
+      { "id": 27, "type": "special", "name": "Relentless Pursuit",    "rulesText": "Move up to 5 spaces toward an enemy and draw 1 card." },
+      { "id": 28, "type": "special", "name": "Warrior's Intimidation","rulesText": "Target enemy suffers –2 attack until your next turn; you move 1 space." },
+      { "id": 29, "type": "special", "name": "Universal Conquest",    "rulesText": "Signature: Strike any 2 enemies for 4 damage each, moving adjacent to each in turn." },
+      { "id": 30, "type": "special", "name": "Tilting the Battlefield","rulesText": "Rotate any board tile or obstacle 90°; figures moved take 1 damage from debris." }
+    ]
+  }
+  

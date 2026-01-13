@@ -1,0 +1,61 @@
+{
+    "id": "anya-bond-deck",
+    "name": "Anya & Bond Deck",
+    "author": "ChatGPT",
+    "version": "1.0.0",
+    "description": "Epic Duels–compatible deck for Anya Forger and Bond.",
+    "characters": [
+      {
+        "id": "anya",
+        "name": "Anya Forger",
+        "imageUrl": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/05/spy-x-family-anyas-classic-meme-face-heh.jpg",
+        "hp": 9,
+        "size": "small",
+        "traits": ["Psionic", "Agent of Chaos", "Witty"]
+      },
+      {
+        "id": "bond",
+        "name": "Bond",
+        "imageUrl": "https://preview.redd.it/science-and-facts-of-bond-v0-xbcdh876o8zc1.png?width=640&crop=smart&auto=webp&s=65c4023fcd6745a88ee100c1ed1e5b7015e327b9",
+        "hp": 13,
+        "size": "large",
+        "traits": ["Bonded", "Mystic", "Protector"]
+      }
+    ],
+    "cards": [
+      { "id": 1,  "owner": "bond", "type": "combat",  "attack": 5, "defense": 0 },
+      { "id": 2,  "owner": "bond", "type": "combat",  "attack": 4, "defense": 1 },
+      { "id": 3,  "owner": "anya", "type": "combat",  "attack": 3, "defense": 1 },
+      { "id": 4,  "owner": "anya", "type": "combat",  "attack": 3, "defense": 1 },
+      { "id": 5,  "owner": "bond", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 6,  "owner": "anya", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 7,  "owner": "bond", "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 8,  "owner": "anya", "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 9,  "owner": "anya", "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 10, "owner": "anya", "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 11, "owner": "anya", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 12, "owner": "bond", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 13, "owner": "bond", "type": "combat",  "attack": 2, "defense": 4 },
+      { "id": 14, "owner": "anya", "type": "combat",  "attack": 1, "defense": 4 },
+      { "id": 15, "owner": "bond", "type": "combat",  "attack": 1, "defense": 5 },
+      { "id": 16, "owner": "anya", "type": "combat",  "attack": 1, "defense": 5 },
+  
+      { "id": 17, "owner": "anya",  "type": "special", "name": "Mind Peek",         "rulesText": "Look at opponent's hand; choose 1 card to discard." },
+      { "id": 18, "owner": "anya",  "type": "special", "name": "Neural Spike",      "rulesText": "Deal 3 damage to an enemy you can see, then scry 1 (cost 1PP/1SP)." },
+      { "id": 19, "owner": "anya",  "type": "special", "name": "Chaos Dominoes",    "rulesText": "Push up to two enemies 2 squares each in random directions (cost 1SP/1MP)." },
+      { "id": 20, "owner": "anya",  "type": "special", "name": "Accidental Tripwire","rulesText": "Deal 2 damage and Immobilize an adjacent enemy (cost 1PP/1MP)." },
+      { "id": 21, "owner": "anya",  "type": "special", "name": "Quick Quip",        "rulesText": "Ally gains Focused and draws 1 card (cost 1SP)." },
+      { "id": 22, "owner": "anya",  "type": "special", "name": "Tactical Dodge",    "rulesText": "You become Stealthed until you attack or take damage (cost 1SP/1MP)." },
+      { "id": 23, "owner": "anya",  "type": "special", "name": "Telepathic Bond",   "rulesText": "Teleport both figures 4 squares, heal 3 HP each; their attacks deal +2 damage this turn (cost 3PP/4SP/4MP)." },
+  
+      { "id": 24, "owner": "bond",  "type": "special", "name": "Loyal Leap",        "rulesText": "Swap positions with Anya; both gain Armor (cost 1SP/1MP)." },
+      { "id": 25, "owner": "bond",  "type": "special", "name": "Empathic Roar",     "rulesText": "Deal 3 damage to an adjacent enemy; Anya draws 1 card (cost 2PP/1SP)." },
+      { "id": 26, "owner": "bond",  "type": "special", "name": "Foresight Growl",   "rulesText": "Scry 3, then move Bond 2 squares (cost 3SP/1MP)." },
+      { "id": 27, "owner": "bond",  "type": "special", "name": "Danger Vision",     "rulesText": "Face-down; reveal to cancel an attack on Anya this round (cost 2SP/2MP)." },
+      { "id": 28, "owner": "bond",  "type": "special", "name": "Bodyguard Bash",    "rulesText": "Deal 4 damage to an enemy adjacent to Anya and Stun it (cost 2PP/2SP)." },
+      { "id": 29, "owner": "bond",  "type": "special", "name": "Covering Charge",   "rulesText": "Move Bond 5 squares, pushing each enemy 1 square (cost 1PP/2MP)." },
+  
+      { "id": 30, "owner": "team",  "type": "special", "name": "Psychic Paw Five!", "rulesText": "+2 damage on an attack, then teleport both figures 3 squares (cost 2SP/2MP)." }
+    ]
+  }
+  

@@ -1,0 +1,54 @@
+{
+    "id": "kirby-deck-1",
+    "name": "Kirby",
+    "author": "ClashGPT",
+    "version": "1.0.0",
+    "characters": [
+      {
+        "id": "kirby-1",
+        "name": "Kirby",
+        "imageUrl": "https://static.wikia.nocookie.net/kirby/images/6/6e/Kirby_SSBU.png",
+        "hp": 18,
+        "size": "small",
+        "traits": [
+          "Shapeshifter",
+          "Devourer",
+          "Anime"
+        ]
+      }
+    ],
+    "cards": [
+      { "id": 1,  "type": "combat", "attack": 1, "defense": 2 },
+      { "id": 2,  "type": "combat", "attack": 1, "defense": 2 },
+      { "id": 3,  "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 4,  "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 5,  "type": "combat", "attack": 3, "defense": 4 },
+      { "id": 6,  "type": "combat", "attack": 2, "defense": 2 },
+      { "id": 7,  "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 8,  "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 9,  "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 10, "type": "combat", "attack": 2, "defense": 2 },
+      { "id": 11, "type": "combat", "attack": 2, "defense": 1 },
+      { "id": 12, "type": "combat", "attack": 1, "defense": 3 },
+      { "id": 13, "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 14, "type": "combat", "attack": 2, "defense": 2 },
+      { "id": 15, "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 16, "type": "combat", "attack": 6, "defense": 0 },
+  
+      { "id": 17, "type": "special", "name": "Hypernova Finale",  "rulesText": "Kirby inhales the battlefield, dealing massive damage in a straight line and teleporting to any adjacent space afterward." },
+      { "id": 18, "type": "special", "name": "Copy Essence",      "rulesText": "Gain one discarded Combat card from a chosen foe and use its stats this turn." },
+      { "id": 19, "type": "special", "name": "Morph Hammer Spin", "rulesText": "Transform into Hammer form, add +2 Attack, then move 2 squares." },
+      { "id": 20, "type": "special", "name": "Star Dash",         "rulesText": "Dash up to 4 squares, ignoring engagement and terrain." },
+      { "id": 21, "type": "special", "name": "Eat and Adapt",     "rulesText": "Devour an adjacent enemy to cancel their action and copy one of their traits for the rest of the game." },
+      { "id": 22, "type": "special", "name": "Copy Move",         "rulesText": "Draw two cards; if either is a Special, play it immediately without cost." },
+      { "id": 23, "type": "special", "name": "Stomach Storage",   "rulesText": "Keep a swallowed card face-down; discard it later to heal 3 HP." },
+      { "id": 24, "type": "special", "name": "Friendship Finale", "rulesText": "Summon three Star Allies to split incoming damage with Kirby this round." },
+      { "id": 25, "type": "special", "name": "Victory Pose",      "rulesText": "Taunt all foes in line of sight; they suffer −1 Defense on their next attack while Kirby shifts 1 square." },
+      { "id": 26, "type": "special", "name": "Superstar Style",   "rulesText": "Leap 2 squares and gain flying until end of turn." },
+      { "id": 27, "type": "special", "name": "Ultimate Copy",     "rulesText": "Copy every face-up trait of one target for one full round." },
+      { "id": 28, "type": "special", "name": "Power of Heart",    "rulesText": "For each adjacent ally, Kirby's next attack gains +2 Attack and pushes the target 2 squares." },
+      { "id": 29, "type": "special", "name": "Star Warrior Blitz","rulesText": "Strike two different enemies for 2 damage each, moving 1 square after every hit." },
+      { "id": 30, "type": "special", "name": "Final Star Cannon", "rulesText": "Discard any number of Combat cards; deal ranged damage equal to double their combined Attack values to one target." }
+    ]
+  }
+  

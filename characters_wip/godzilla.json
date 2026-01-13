@@ -1,0 +1,51 @@
+{
+  "id": "godzilla-deck",
+  "name": "Godzilla Deck",
+  "author": "Werd Web Dev",
+  "model_used": "gpt-3o",
+  "version": "1.0.0",
+  "description": "Epic Duels–compatible deck for Godzilla.",
+  "characters": [
+    {
+      "id": "godzilla",
+      "name": "Godzilla",
+      "imageUrl": "https://images.comicbooktreasury.com/wp-content/uploads/2023/02/Godzilla-Comics-Reading-Order.jpg",
+      "hp": 35,
+      "size": "giant",
+      "traits": ["Titan", "Indestructible", "Monster"]
+    }
+  ],
+  "cards": [
+    { "id": 1,  "owner": "godzilla", "type": "combat",  "attack": 5, "defense": 1 },
+    { "id": 2,  "owner": "godzilla", "type": "combat",  "attack": 4, "defense": 1 },
+    { "id": 3,  "owner": "godzilla", "type": "combat",  "attack": 4, "defense": 2 },
+    { "id": 4,  "owner": "godzilla", "type": "combat",  "attack": 4, "defense": 2 },
+    { "id": 5,  "owner": "godzilla", "type": "combat",  "attack": 4, "defense": 2 },
+    { "id": 6,  "owner": "godzilla", "type": "combat",  "attack": 3, "defense": 3 },
+    { "id": 7,  "owner": "godzilla", "type": "combat",  "attack": 3, "defense": 3 },
+    { "id": 8,  "owner": "godzilla", "type": "combat",  "attack": 3, "defense": 4 },
+    { "id": 9,  "owner": "godzilla", "type": "combat",  "attack": 3, "defense": 4 },
+    { "id": 10, "owner": "godzilla", "type": "combat",  "attack": 2, "defense": 4 },
+    { "id": 11, "owner": "godzilla", "type": "combat",  "attack": 2, "defense": 4 },
+    { "id": 12, "owner": "godzilla", "type": "combat",  "attack": 2, "defense": 4 },
+    { "id": 13, "owner": "godzilla", "type": "combat",  "attack": 2, "defense": 4 },
+    { "id": 14, "owner": "godzilla", "type": "combat",  "attack": 2, "defense": 4 },
+    { "id": 15, "owner": "godzilla", "type": "combat",  "attack": 0, "defense": 7 },
+    { "id": 16, "owner": "godzilla", "type": "combat",  "attack": 0, "defense": 7 },
+
+    { "id": 17, "owner": "godzilla", "type": "special", "name": "Titanic Foot Stomp",        "rulesText": "Deal 6 damage to an adjacent enemy and push it 2 squares." },
+    { "id": 18, "owner": "godzilla", "type": "special", "name": "Earth-Shattering Roar",     "rulesText": "All enemies within 3 squares take 3 damage and are Stunned." },
+    { "id": 19, "owner": "godzilla", "type": "special", "name": "Seismic Tail Swipe",        "rulesText": "Deal 4 damage to one enemy and pull it 3 squares toward you." },
+    { "id": 20, "owner": "godzilla", "type": "special", "name": "Regenerative Scales",       "rulesText": "Heal yourself 4 HP and gain Regenerating for 1 round." },
+    { "id": 21, "owner": "godzilla", "type": "special", "name": "Unbreakable Hide",          "rulesText": "Gain Armor and Fortified." },
+    { "id": 22, "owner": "godzilla", "type": "special", "name": "Immovable Stance",          "rulesText": "Until your next turn you cannot be pushed or pulled; enemies that enter an adjacent square are Immobilized." },
+    { "id": 23, "owner": "godzilla", "type": "special", "name": "Predatory Lunge",           "rulesText": "Teleport 2 squares and deal 4 damage; target gains Bleeding." },
+    { "id": 24, "owner": "godzilla", "type": "special", "name": "Rampage",                   "rulesText": "Make a basic melee attack against every adjacent enemy." },
+    { "id": 25, "owner": "godzilla", "type": "special", "name": "Savage Bite",               "rulesText": "Deal 3 damage to one enemy and gain Focused." },
+    { "id": 26, "owner": "godzilla", "type": "special", "name": "Titanic Regeneration",      "rulesText": "Remove all negative conditions from yourself and heal 2 HP." },
+    { "id": 27, "owner": "godzilla", "type": "special", "name": "Terrifying Shriek",         "rulesText": "Deal 2 damage and push all enemies within 2 squares back 2." },
+    { "id": 28, "owner": "godzilla", "type": "special", "name": "Cataclysmic Tail Whirl",    "rulesText": "Move 4 squares in a straight line; each enemy crossed takes 3 damage and is Knocked Down." },
+    { "id": 29, "owner": "godzilla", "type": "special", "name": "Atomic Breath",             "rulesText": "Line 6: deal 7 damage; targets hit are Blinded." },
+    { "id": 30, "owner": "godzilla", "type": "special", "name": "Wild Smash",                "rulesText": "Deal 2 damage and swap places with the target." }
+  ]
+}

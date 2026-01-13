@@ -1,0 +1,51 @@
+{
+  "id": "kaiju-deck",
+  "name": "Kaiju Deck",
+  "author": "Werd Web Dev",
+  "model_used": "gpt-3o",
+  "version": "1.0.0",
+  "description": "Epic Duels–compatible deck for a massive Kaiju monster.",
+  "characters": [
+    {
+      "id": "kaiju",
+      "name": "Kaiju",
+      "imageUrl": "https://placehold.co/400x400/8b0000/ffffff?text=KAJU",
+      "hp": 50,
+      "size": "giant",
+      "traits": ["Colossal", "Ancient", "Titanic", "Monster"]
+    }
+  ],
+  "cards": [
+    { "id": 1,  "owner": "kaiju", "type": "combat",  "attack": 6, "defense": 1 },
+    { "id": 2,  "owner": "kaiju", "type": "combat",  "attack": 5, "defense": 2 },
+    { "id": 3,  "owner": "kaiju", "type": "combat",  "attack": 5, "defense": 2 },
+    { "id": 4,  "owner": "kaiju", "type": "combat",  "attack": 4, "defense": 3 },
+    { "id": 5,  "owner": "kaiju", "type": "combat",  "attack": 4, "defense": 3 },
+    { "id": 6,  "owner": "kaiju", "type": "combat",  "attack": 4, "defense": 3 },
+    { "id": 7,  "owner": "kaiju", "type": "combat",  "attack": 3, "defense": 4 },
+    { "id": 8,  "owner": "kaiju", "type": "combat",  "attack": 3, "defense": 4 },
+    { "id": 9,  "owner": "kaiju", "type": "combat",  "attack": 3, "defense": 4 },
+    { "id": 10, "owner": "kaiju", "type": "combat",  "attack": 2, "defense": 5 },
+    { "id": 11, "owner": "kaiju", "type": "combat",  "attack": 2, "defense": 5 },
+    { "id": 12, "owner": "kaiju", "type": "combat",  "attack": 2, "defense": 5 },
+    { "id": 13, "owner": "kaiju", "type": "combat",  "attack": 1, "defense": 6 },
+    { "id": 14, "owner": "kaiju", "type": "combat",  "attack": 1, "defense": 6 },
+    { "id": 15, "owner": "kaiju", "type": "combat",  "attack": 0, "defense": 8 },
+    { "id": 16, "owner": "kaiju", "type": "combat",  "attack": 0, "defense": 8 },
+
+    { "id": 17, "owner": "kaiju", "type": "special", "name": "Colossal Stomp",               "rulesText": "Deal 8 damage to an adjacent enemy and push it 3 squares." },
+    { "id": 18, "owner": "kaiju", "type": "special", "name": "Thunderous Roar",              "rulesText": "All enemies within 4 squares take 4 damage and are Stunned." },
+    { "id": 19, "owner": "kaiju", "type": "special", "name": "Mountain-Sized Tail Swipe",    "rulesText": "Deal 5 damage to one enemy and pull it 4 squares toward you." },
+    { "id": 20, "owner": "kaiju", "type": "special", "name": "Ancient Regeneration",         "rulesText": "Heal yourself 6 HP and gain Regenerating for 2 rounds." },
+    { "id": 21, "owner": "kaiju", "type": "special", "name": "Impenetrable Hide",            "rulesText": "Gain Armor and Fortified twice." },
+    { "id": 22, "owner": "kaiju", "type": "special", "name": "Unmovable Presence",           "rulesText": "Until your next turn you cannot be pushed or pulled; enemies that enter within 2 squares are Immobilized." },
+    { "id": 23, "owner": "kaiju", "type": "special", "name": "Titanic Charge",               "rulesText": "Move 3 squares in a straight line; deal 5 damage to each enemy crossed." },
+    { "id": 24, "owner": "kaiju", "type": "special", "name": "Devastating Rampage",          "rulesText": "Make a basic melee attack against every enemy within 2 squares." },
+    { "id": 25, "owner": "kaiju", "type": "special", "name": "Crushing Bite",                "rulesText": "Deal 4 damage to one enemy and gain Focused twice." },
+    { "id": 26, "owner": "kaiju", "type": "special", "name": "Titanic Recovery",             "rulesText": "Remove all negative conditions from yourself and heal 4 HP." },
+    { "id": 27, "owner": "kaiju", "type": "special", "name": "Earthquake",                   "rulesText": "Deal 3 damage and push all enemies within 3 squares back 3." },
+    { "id": 28, "owner": "kaiju", "type": "special", "name": "Cataclysmic Whirlwind",        "rulesText": "Move 5 squares in a straight line; each enemy crossed takes 4 damage and is Knocked Down." },
+    { "id": 29, "owner": "kaiju", "type": "special", "name": "Volcanic Breath",              "rulesText": "Line 8: deal 9 damage; targets hit are Blinded and gain Bleeding." },
+    { "id": 30, "owner": "kaiju", "type": "special", "name": "Titanic Smash",                "rulesText": "Deal 3 damage and swap places with the target; all adjacent enemies take 2 damage." }
+  ]
+} 

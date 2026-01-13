@@ -1,0 +1,60 @@
+{
+    "id": "ice-king-deck",
+    "name": "Ice King & Penguins",
+    "author": "Werd Web Dev",
+    "model_used": "gpt-3o",
+    "version": "1.0.0",
+    "description": "Epic Duels–compatible deck for the Ice King and his penguin minions.",
+    "characters": [
+      {
+        "id": "ice-king",
+        "name": "Ice King",
+        "imageUrl": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/adventure-time-hey-ice-king/e/e2/Iceking.jpg",
+        "hp": 15,
+        "size": "medium",
+        "traits": ["Caster", "Elementalist", "Mischievous"]
+      },
+      {
+        "id": "penguin",
+        "name": "Penguins",
+        "imageUrl": "https://i.redd.it/9yn1895gnebb1.jpg",
+        "hp": 4,
+        "size": "small",
+        "traits": ["Hijinx", "Eldritch", "Penguin"],
+        "minionCount": 3
+      }
+    ],
+    "cards": [
+      { "id": 1,  "owner": "ice-king", "type": "combat",  "attack": 5, "defense": 1 },
+      { "id": 2,  "owner": "ice-king", "type": "combat",  "attack": 4, "defense": 1 },
+      { "id": 3,  "owner": "ice-king", "type": "combat",  "attack": 4, "defense": 2 },
+      { "id": 4,  "owner": "ice-king", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 5,  "owner": "ice-king", "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 6,  "owner": "ice-king", "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 7,  "owner": "ice-king", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 8,  "owner": "ice-king", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 9,  "owner": "ice-king", "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 10, "owner": "penguin",   "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 11, "owner": "penguin",   "type": "combat",  "attack": 1, "defense": 3 },
+      { "id": 12, "owner": "penguin",   "type": "combat",  "attack": 1, "defense": 2 },
+      { "id": 13, "owner": "penguin",   "type": "combat",  "attack": 1, "defense": 3 },
+      { "id": 14, "owner": "penguin",   "type": "combat",  "attack": 1, "defense": 3 },
+      { "id": 15, "owner": "penguin",   "type": "combat",  "attack": 1, "defense": 2 },
+      { "id": 16, "owner": "penguin",   "type": "combat",  "attack": 1, "defense": 3 },
+      { "id": 17, "owner": "ice-king",  "type": "special", "name": "Frost Bolt",          "rulesText": "Deal 4 damage to an enemy within 6 squares." },
+      { "id": 18, "owner": "ice-king",  "type": "special", "name": "Frozen Grip",         "rulesText": "Deal 3 damage and Immobilize the target." },
+      { "id": 19, "owner": "ice-king",  "type": "special", "name": "Ice Wall",            "rulesText": "Place a 2×2 Ice Wall blocking movement & line-of-sight for 1 round." },
+      { "id": 20, "owner": "ice-king",  "type": "special", "name": "Elemental Shield",    "rulesText": "Gain a 6-point shield that absorbs the next damage you take." },
+      { "id": 21, "owner": "ice-king",  "type": "special", "name": "Discard Prank",       "rulesText": "Opponent discards 1 random card." },
+      { "id": 22, "owner": "ice-king",  "type": "special", "name": "Prank Push",          "rulesText": "Push one target 3 squares away." },
+      { "id": 23, "owner": "ice-king",  "type": "special", "name": "Glacial Catastrophe", "rulesText": "Deal 5 damage to all enemies in a 3-hex burst, create a 2×2 Ice Wall inside the burst, then teleport Ice King up to 5 squares." },
+      { "id": 24, "owner": "penguin",   "type": "special", "name": "Slapstick Shuffle",   "rulesText": "Move all friendly Penguins 2 squares ignoring terrain." },
+      { "id": 25, "owner": "penguin",   "type": "special", "name": "Fishy Distraction",   "rulesText": "Target enemy is Silenced on its next turn." },
+      { "id": 26, "owner": "penguin",   "type": "special", "name": "Harrowing Honk",      "rulesText": "Target enemy is Stunned." },
+      { "id": 27, "owner": "penguin",   "type": "special", "name": "Void Gaze",           "rulesText": "Deal 2 damage and Curse the target enemy." },
+      { "id": 28, "owner": "penguin",   "type": "special", "name": "March of the Penguins","rulesText": "Move up to two Penguins 2 squares; they each gain Armor." },
+      { "id": 29, "owner": "penguin",   "type": "special", "name": "Iceberg Toss",        "rulesText": "Deal 3 damage to an enemy within 4 squares." },
+      { "id": 30, "owner": "ice-king",  "type": "special", "name": "Frosty Frenzy",       "rulesText": "Deal 3 damage to up to two enemies; then swap Ice King with a friendly Penguin." }
+    ]
+  }
+  

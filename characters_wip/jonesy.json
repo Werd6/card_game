@@ -1,0 +1,45 @@
+{
+    "id": "epic-duels-jonesy",
+    "name": "Jonesy",
+    "author": "ChatGPT",
+    "version": "1.0.0",
+    "traits": [
+      "Arsenal",
+      "Scrapper",
+      "Outlaw"
+    ],
+    "cards": [
+      { "id": 1, "type": "combat", "attack": 10, "defense": 0 },
+      { "id": 2, "type": "combat", "attack": 10, "defense": 0 },
+      { "id": 3, "type": "combat", "attack": 0, "defense": 8 },
+      { "id": 4, "type": "combat", "attack": 4, "defense": 3 },
+      { "id": 5, "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 6, "type": "combat", "attack": 4, "defense": 3 },
+      { "id": 7, "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 8, "type": "combat", "attack": 3, "defense": 4 },
+      { "id": 9, "type": "combat", "attack": 3, "defense": 4 },
+      { "id": 10, "type": "combat", "attack": 3, "defense": 4 },
+      { "id": 11, "type": "combat", "attack": 5, "defense": 3 },
+      { "id": 12, "type": "combat", "attack": 5, "defense": 2 },
+      { "id": 13, "type": "combat", "attack": 5, "defense": 2 },
+      { "id": 14, "type": "combat", "attack": 5, "defense": 2 },
+      { "id": 15, "type": "combat", "attack": 5, "defense": 2 },
+      { "id": 16, "type": "combat", "attack": 5, "defense": 3 },
+  
+      { "id": 17, "type": "special", "name": "Rapid Loadout", "rulesText": "Swap your hand with 3 new cards, then move 1 space.", "effects": [{ "type": "special", "value": 3, "target": "self" }] },
+      { "id": 18, "type": "special", "name": "Shotgun Blitz", "rulesText": "Deal 4 damage to a character within 1 space.", "effects": [{ "type": "attack", "value": 4, "target": "enemy" }] },
+      { "id": 19, "type": "special", "name": "Rifle Sweep", "rulesText": "Deal 2 damage to up to 2 characters in a straight line.", "effects": [{ "type": "attack", "value": 2, "target": "area" }] },
+      { "id": 20, "type": "special", "name": "Low Blow", "rulesText": "Deal 3 damage and force the opponent to discard 1 card.", "effects": [{ "type": "attack", "value": 3, "target": "enemy" }, { "type": "discard", "value": 1, "target": "enemy" }] },
+      { "id": 21, "type": "special", "name": "Cheap Shot", "rulesText": "Deal 2 damage and push the target 1 space.", "effects": [{ "type": "attack", "value": 2, "target": "enemy" }, { "type": "move", "value": 1, "target": "enemy" }] },
+      { "id": 22, "type": "special", "name": "Makeshift Trap", "rulesText": "Target discards 1 card or takes 3 damage; your choice.", "effects": [{ "type": "choice", "options": ["discard 1", "take 3 damage"], "target": "enemy" }] },
+      { "id": 23, "type": "special", "name": "Wanted Dead", "rulesText": "Mark an enemy; when they take damage, they take +1 more until your next turn.", "effects": [{ "type": "status", "value": "vulnerable", "target": "enemy" }] },
+      { "id": 24, "type": "special", "name": "Sucker Punch", "rulesText": "Move 3 spaces and deal 2 damage to an adjacent character.", "effects": [{ "type": "move", "value": 3, "target": "self" }, { "type": "attack", "value": 2, "target": "enemy" }] },
+      { "id": 25, "type": "special", "name": "Scrappy Brawler", "rulesText": "Draw 1, move 1, then deal 1 damage to a nearby enemy.", "effects": [{ "type": "draw", "value": 1 }, { "type": "move", "value": 1 }, { "type": "attack", "value": 1, "target": "enemy" }] },
+      { "id": 26, "type": "special", "name": "Guns Blazing", "rulesText": "Discard 2 cards to deal 5 damage divided among enemies in range.", "effects": [{ "type": "discard", "value": 2, "target": "self" }, { "type": "attack", "value": 5, "target": "area" }] },
+      { "id": 27, "type": "special", "name": "Booby Trap", "rulesText": "Next time any character moves adjacent, they take 3 damage.", "effects": [{ "type": "trap", "value": 3 }] },
+      { "id": 28, "type": "special", "name": "Retaliate", "rulesText": "After being attacked, move 2 spaces and deal 2 damage back.", "effects": [{ "type": "reaction", "value": "move 2 + deal 2", "trigger": "damaged" }] },
+      { "id": 29, "type": "special", "name": "Tactical Overdrive", "rulesText": "Draw 2 cards, move 3 spaces, and deal 4 damage split among enemies.", "effects": [{ "type": "draw", "value": 2 }, { "type": "move", "value": 3 }, { "type": "attack", "value": 4, "target": "area" }] },
+      { "id": 30, "type": "special", "name": "Battle-Hardened", "rulesText": "Heal 2, then push up to 2 adjacent enemies 1 space away.", "effects": [{ "type": "heal", "value": 2, "target": "self" }, { "type": "push", "value": 1, "target": "enemy" }] }
+    ]
+  }
+  

@@ -1,0 +1,51 @@
+{
+    "id": "saitama-deck",
+    "name": "Saitama Deck",
+    "author": "Werd Web Dev",
+    "version": "1.0.0",
+    "description": "Epic Duels–compatible deck for Saitama (One-Punch Man).",
+    "characters": [
+      {
+        "id": "saitama",
+        "name": "Saitama",
+        "imageUrl": "https://preview.redd.it/is-there-a-possibility-that-saitama-will-reconnect-with-his-v0-a68r1dfui7ce1.jpeg?width=640&crop=smart&auto=webp&s=4978fbcae444a1e6e888367486a04bfb2e319b5b",
+        "hp": 20,
+        "size": "medium",
+        "traits": ["Titan", "Anime", "Indestructible"]
+      }
+    ],
+    "cards": [
+      { "id": 1, "owner": "saitama", "type": "combat",  "attack": 6, "defense": 0 },
+      { "id": 2, "owner": "saitama", "type": "combat",  "attack": 5, "defense": 1 },
+      { "id": 3, "owner": "saitama", "type": "combat",  "attack": 5, "defense": 1 },
+      { "id": 4, "owner": "saitama", "type": "combat",  "attack": 4, "defense": 2 },
+      { "id": 5, "owner": "saitama", "type": "combat",  "attack": 4, "defense": 2 },
+      { "id": 6, "owner": "saitama", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 7, "owner": "saitama", "type": "combat",  "attack": 3, "defense": 1 },
+      { "id": 8, "owner": "saitama", "type": "combat",  "attack": 3, "defense": 1 },
+      { "id": 9, "owner": "saitama", "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 10, "owner": "saitama", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 11, "owner": "saitama", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 12, "owner": "saitama", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 13, "owner": "saitama", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 14, "owner": "saitama", "type": "combat",  "attack": 1, "defense": 5 },
+      { "id": 15, "owner": "saitama", "type": "combat",  "attack": 1, "defense": 5 },
+      { "id": 16, "owner": "saitama", "type": "combat",  "attack": 1, "defense": 4 },
+  
+      { "id": 17, "owner": "saitama", "type": "special", "name": "Ground Smash", "rulesText": "Deal 4 damage to each adjacent enemy and push them 2 squares away." },
+      { "id": 18, "owner": "saitama", "type": "special", "name": "Leaping Uppercut", "rulesText": "Jump up to 5 squares; deal 3 damage to an adjacent enemy, then knock it 2 squares back." },
+      { "id": 19, "owner": "saitama", "type": "special", "name": "Consecutive Normal Punches", "rulesText": "Deal 3 damage to up to three different adjacent enemies." },
+      { "id": 20, "owner": "saitama", "type": "special", "name": "One-Hit Wonder", "rulesText": "Cancel an enemy attack against you; that enemy takes 2 damage." },
+      { "id": 21, "owner": "saitama", "type": "special", "name": "Hero Routine: Bargain Hunt", "rulesText": "Look at the top 3 cards of your deck, keep 1, return the rest; then move +2 squares ignoring zones." },
+      { "id": 22, "owner": "saitama", "type": "special", "name": "Dramatic Entrance", "rulesText": "Teleport to any space within 6 squares; if now adjacent to an enemy, deal 2 damage to it." },
+      { "id": 23, "owner": "saitama", "type": "special", "name": "Unbreakable Stance", "rulesText": "Remove all negative conditions from yourself and gain Fortified." },
+      { "id": 24, "owner": "saitama", "type": "special", "name": "I Guess I'm Too Strong", "rulesText": "The next damage you would take this turn is reduced to 0; the attacker is Stunned." },
+      { "id": 25, "owner": "saitama", "type": "special", "name": "Serious Side-Glance", "rulesText": "Deal 3 damage to a visible enemy and make it Vulnerable." },
+      { "id": 26, "owner": "saitama", "type": "special", "name": "Overwhelming Presence", "rulesText": "Deal 3 damage to all adjacent enemies, then teleport 3 squares." },
+      { "id": 27, "owner": "saitama", "type": "special", "name": "Lazy Sidestep", "rulesText": "Move up to 3 squares; you are Stealthed until your next turn or you deal damage." },
+      { "id": 28, "owner": "saitama", "type": "special", "name": "Immovable Object", "rulesText": "Gain a 6-point shield; push all adjacent enemies 2 squares away." },
+      { "id": 29, "owner": "saitama", "type": "special", "name": "Serious Punch", "rulesText": "Deal 10 damage to one enemy; if it is defeated, push all other enemies you can see 3 squares away." },
+      { "id": 30, "owner": "saitama", "type": "special", "name": "Finishing Flick", "rulesText": "Deal 5 damage to an adjacent enemy." }
+    ]
+  }
+  

@@ -1,0 +1,51 @@
+{
+    "id": "iron-man-deck",
+    "name": "Iron Man Deck",
+    "author": "Werd Web Dev",
+    "version": "1.0.0",
+    "description": "Epic Duels–compatible deck for Iron Man.",
+    "characters": [
+      {
+        "id": "iron-man",
+        "name": "Iron Man",
+        "imageUrl": "https://i0.wp.com/aiptcomics.com/wp-content/uploads/2024/09/iron-man-2024-min.png?resize=1000%2C563&ssl=1",
+        "hp": 16,
+        "size": "medium",
+        "traits": ["Tech", "Arsenal", "Mastermind"]
+      }
+    ],
+    "cards": [
+      { "id": 1,  "owner": "iron-man", "type": "combat",  "attack": 5, "defense": 1 },
+      { "id": 2,  "owner": "iron-man", "type": "combat",  "attack": 4, "defense": 1 },
+      { "id": 3,  "owner": "iron-man", "type": "combat",  "attack": 4, "defense": 1 },
+      { "id": 4,  "owner": "iron-man", "type": "combat",  "attack": 4, "defense": 2 },
+      { "id": 5,  "owner": "iron-man", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 6,  "owner": "iron-man", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 7,  "owner": "iron-man", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 8,  "owner": "iron-man", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 9,  "owner": "iron-man", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 10, "owner": "iron-man", "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 11, "owner": "iron-man", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 12, "owner": "iron-man", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 13, "owner": "iron-man", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 14, "owner": "iron-man", "type": "combat",  "attack": 1, "defense": 4 },
+      { "id": 15, "owner": "iron-man", "type": "combat",  "attack": 1, "defense": 4 },
+      { "id": 16, "owner": "iron-man", "type": "combat",  "attack": 1, "defense": 4 },
+  
+      { "id": 17, "owner": "iron-man", "type": "special", "name": "Repulsor Blast",        "rulesText": "Deal 4 damage to an enemy within 6 squares; look at the top 3 cards of your deck, keep 1, then cleanse one negative condition from yourself." },
+      { "id": 18, "owner": "iron-man", "type": "special", "name": "Energy Shield",         "rulesText": "Gain a 6-point Shield and a Fortified token; draw 1 card." },
+      { "id": 19, "owner": "iron-man", "type": "special", "name": "Micro-Missiles",        "rulesText": "Deal 3 damage to up to two enemies; push each target 1 square." },
+      { "id": 20, "owner": "iron-man", "type": "special", "name": "Homing Rockets",        "rulesText": "Deal 4 damage to every enemy in a 3-hex burst; draw 1 card." },
+      { "id": 21, "owner": "iron-man", "type": "special", "name": "Laser Lariat",          "rulesText": "Pull a target 3 squares toward you, then deal 3 damage to it." },
+      { "id": 22, "owner": "iron-man", "type": "special", "name": "Smart Targeting",       "rulesText": "Look at the top 5 cards of any deck, reorder them, then your opponent discards 1 random card." },
+      { "id": 23, "owner": "iron-man", "type": "special", "name": "Predictive Algorithms", "rulesText": "Play when attacked: cancel the attack; the attacker is Stunned." },
+      { "id": 24, "owner": "iron-man", "type": "special", "name": "Strategic Uplink",      "rulesText": "Gain 1 additional action this turn and a Hasted token." },
+      { "id": 25, "owner": "iron-man", "type": "special", "name": "Emergency Protocols",   "rulesText": "Heal yourself or an ally 4 HP and remove Stunned, Immobilized, or Bleeding from that character." },
+      { "id": 26, "owner": "iron-man", "type": "special", "name": "Auto-Target Barrage",   "rulesText": "Deal 3 damage to up to two enemies; look at the top 3 cards of your deck, keep 1." },
+      { "id": 27, "owner": "iron-man", "type": "special", "name": "Adaptive Battle Plan",  "rulesText": "Swap places with an ally within 4 squares; that ally gains Empowered." },
+      { "id": 28, "owner": "iron-man", "type": "special", "name": "Predictive Evasion",    "rulesText": "Teleport up to 5 squares; you are Phase-Shifted until your next turn." },
+      { "id": 29, "owner": "iron-man", "type": "special", "name": "House Party Protocol",  "rulesText": "Summon two 3-HP Iron Legion drone minions adjacent to you; they act immediately after you this turn." },
+      { "id": 30, "owner": "iron-man", "type": "special", "name": "Emergency Gauntlet",    "rulesText": "Deal 4 damage to an adjacent enemy; gain a Focused token." }
+    ]
+  }
+  

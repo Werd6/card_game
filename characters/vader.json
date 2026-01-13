@@ -1,0 +1,60 @@
+{
+    "id": "darth-vader-stormtroopers",
+    "name": "Darth Vader & Stormtroopers",
+    "author": "Gemini",
+    "version": "1.0.0",
+    "description": "The Emperor's wrathful enforcer, Darth Vader, leads his relentless Stormtroopers to crush the Rebellion with overwhelming power and tactical precision.",
+    "characters": [
+      {
+        "id": "darth-vader",
+        "name": "Darth Vader",
+        "imageUrl": "https://placehold.co/150x150/000000/ffffff?text=V",
+        "hp": 17,
+        "size": "large",
+        "traits": ["Villainous", "Commander", "Psionic"],
+        "ranged": false
+      },
+      {
+        "id": "stormtrooper",
+        "name": "Stormtrooper",
+        "imageUrl": "https://placehold.co/150x150/eeeeee/000000?text=S",
+        "hp": 4,
+        "size": "medium",
+        "traits": ["Warrior", "Tech", "Relentless"],
+        "ranged": true,
+        "minionCount": 3
+      }
+    ],
+    "cards": [
+      { "id": 1, "owner": "darth-vader", "type": "combat", "attack": 10, "defense": 0 },
+      { "id": 2, "owner": "darth-vader", "type": "combat", "attack": 4, "defense": 1 },
+      { "id": 3, "owner": "darth-vader", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 4, "owner": "darth-vader", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 5, "owner": "darth-vader", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 6, "owner": "darth-vader", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 7, "owner": "darth-vader", "type": "combat", "attack": 2, "defense": 4 },
+      { "id": 8, "owner": "darth-vader", "type": "combat", "attack": 2, "defense": 4 },
+      { "id": 9, "owner": "darth-vader", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 10, "owner": "stormtrooper", "type": "combat", "attack": 3, "defense": 2 },
+      { "id": 11, "owner": "stormtrooper", "type": "combat", "attack": 3, "defense": 2 },
+      { "id": 12, "owner": "stormtrooper", "type": "combat", "attack": 3, "defense": 2 },
+      { "id": 13, "owner": "stormtrooper", "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 14, "owner": "stormtrooper", "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 15, "owner": "stormtrooper", "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 16, "owner": "stormtrooper", "type": "combat", "attack": 2, "defense": 2 },
+      { "id": 17, "owner": "darth-vader", "type": "special", "name": "🔹 Force Choke", "rulesText": "Deal 2 damage to an enemy in your line of sight; that enemy must discard one random card." },
+      { "id": 18, "owner": "darth-vader", "type": "special", "name": "🔹 Vader's Fury", "rulesText": "Gain Focused for your next attack this turn, adding +2 to its damage." },
+      { "id": 19, "owner": "darth-vader", "type": "special", "name": "🔸 You Are In Command Now", "rulesText": "You may defeat a friendly Stormtrooper to draw 2 cards and gain 1 action." },
+      { "id": 20, "owner": "darth-vader", "type": "special", "name": "🔸 Imperial Advance", "rulesText": "Choose up to two friendly Stormtroopers and move each of them up to 3 spaces." },
+      { "id": 21, "owner": "darth-vader", "type": "special", "name": "🔺 Telekinetic Throw", "rulesText": "Deal 2 damage to one enemy and you may push or pull them up to 2 spaces." },
+      { "id": 22, "owner": "darth-vader", "type": "special", "name": "🔺 Your Feelings Betray You", "rulesText": "Look at an opponent's hand and choose one card for them to discard." },
+      { "id": 23, "owner": "darth-vader", "type": "special", "name": "◆ I Have You Now", "rulesText": "Deal 5 damage to one enemy in your line of sight; this damage cannot be defended." },
+      { "id": 24, "owner": "stormtrooper", "type": "special", "name": "🟢 Covering Fire", "rulesText": "Deal 3 damage to an enemy in your line of sight." },
+      { "id": 25, "owner": "stormtrooper", "type": "special", "name": "🟢 Squad Tactics", "rulesText": "Choose another friendly Stormtrooper, who may immediately move up to 3 spaces." },
+      { "id": 26, "owner": "stormtrooper", "type": "special", "name": "🟡 E-11 Blast", "rulesText": "Deal 2 damage to up to two different enemies in your line of sight." },
+      { "id": 27, "owner": "stormtrooper", "type": "special", "name": "🟡 Targeting Computer", "rulesText": "This Stormtrooper gains Empowered until the end of the turn (+1 to all attacks)." },
+      { "id": 28, "owner": "stormtrooper", "type": "special", "name": "🟣 Reinforcements", "rulesText": "If there are fewer than 3 Stormtroopers on the board, place one defeated Stormtrooper with full health adjacent to Darth Vader." },
+      { "id": 29, "owner": "stormtrooper", "type": "special", "name": "🟣 For the Empire!", "rulesText": "This Stormtrooper may move up to 4 spaces." },
+      { "id": 30, "owner": "any", "type": "special", "name": "⭐ Dark Side Presence", "rulesText": "Push all adjacent enemies 1 space away from you and deal 1 damage to each of them." }
+    ]
+  }

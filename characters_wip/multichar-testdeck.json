@@ -1,0 +1,64 @@
+{
+  "id": "multichar-testdeck-1",
+  "name": "Multi-Character Test Deck",
+  "author": "Test Author",
+  "version": "1.0.0",
+  "characters": [
+    {
+      "id": "hero-1",
+      "name": "Hero",
+      "imageUrl": "https://placehold.co/150x150/1976d2/ffffff?text=Hero",
+      "hp": 22,
+      "size": "medium",
+      "traits": ["Brave", "Leader", "Swordmaster"]
+    },
+    {
+      "id": "mage-1",
+      "name": "Mage",
+      "imageUrl": "https://placehold.co/150x150/9c27b0/ffffff?text=Mage",
+      "hp": 18,
+      "size": "small",
+      "traits": ["Magic", "Wise", "Scholar"]
+    },
+    {
+      "id": "giant-1",
+      "name": "Giant",
+      "imageUrl": "https://placehold.co/150x150/ff5722/ffffff?text=Giant",
+      "hp": 35,
+      "size": "huge",
+      "traits": ["Strong", "Tough", "Colossal"]
+    }
+  ],
+  "cards": [
+    { "id": 1, "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 2, "type": "combat", "attack": 2, "defense": 1 },
+    { "id": 3, "type": "combat", "attack": 1, "defense": 2 },
+    { "id": 4, "type": "combat", "attack": 2, "defense": 2 },
+    { "id": 5, "type": "combat", "attack": 3, "defense": 1 },
+    { "id": 6, "type": "combat", "attack": 1, "defense": 3 },
+    { "id": 7, "type": "combat", "attack": 2, "defense": 3 },
+    { "id": 8, "type": "combat", "attack": 3, "defense": 2 },
+    { "id": 9, "type": "combat", "attack": 2, "defense": 2 },
+    { "id": 10, "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 11, "type": "combat", "attack": 3, "defense": 3 },
+    { "id": 12, "type": "combat", "attack": 2, "defense": 1 },
+    { "id": 13, "type": "combat", "attack": 1, "defense": 2 },
+    { "id": 14, "type": "combat", "attack": 2, "defense": 2 },
+    { "id": 15, "type": "combat", "attack": 3, "defense": 1 },
+    { "id": 16, "type": "combat", "attack": 1, "defense": 3 },
+    { "id": 17, "type": "special", "name": "Heroic Strike", "rulesText": "Deal 3 damage to an enemy." },
+    { "id": 18, "type": "special", "name": "Arcane Blast", "rulesText": "Deal 2 damage to all enemies." },
+    { "id": 19, "type": "special", "name": "Giant's Stomp", "rulesText": "Stun all adjacent enemies." },
+    { "id": 20, "type": "special", "name": "Defensive Stance", "rulesText": "Gain +2 defense this turn." },
+    { "id": 21, "type": "special", "name": "Quick Heal", "rulesText": "Restore 4 HP to any character." },
+    { "id": 22, "type": "special", "name": "Fireball", "rulesText": "Deal 4 damage to a single target." },
+    { "id": 23, "type": "special", "name": "Shield Wall", "rulesText": "All allies gain +1 defense." },
+    { "id": 24, "type": "special", "name": "Teleport", "rulesText": "Move to any empty space." },
+    { "id": 25, "type": "special", "name": "Berserk", "rulesText": "Double your attack this turn." },
+    { "id": 26, "type": "special", "name": "Freeze", "rulesText": "Freeze an enemy for 1 turn." },
+    { "id": 27, "type": "special", "name": "Lightning Bolt", "rulesText": "Deal 5 damage to a random enemy." },
+    { "id": 28, "type": "special", "name": "Inspire", "rulesText": "All allies draw 1 card." },
+    { "id": 29, "type": "special", "name": "Taunt", "rulesText": "Force an enemy to attack you next turn." },
+    { "id": 30, "type": "special", "name": "Empty Special", "rulesText": "This is an empty special card." }
+  ]
+} 

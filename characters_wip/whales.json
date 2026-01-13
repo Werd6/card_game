@@ -1,0 +1,61 @@
+{
+  "id": "beluga-humpback-deck",
+  "name": "Whales",
+  "author": "Werd Web Dev",
+  "model_used": "gpt-3o",
+  "version": "1.0.0",
+  "description": "Epic Duels–compatible deck for a mystical Beluga Whale and its Humpback Whale protector.",
+  "characters": [
+    {
+      "id": "beluga",
+      "name": "Beluga",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLFGy26qbE4h89pJOcSYVXn2-YfTDQge2dOQ&s",
+      "hp": 19,
+      "size": "large",
+      "traits": ["Mystic", "Whale", "Noisy"]
+    },
+    {
+      "id": "humpback",
+      "name": "Humpback",
+      "imageUrl": "https://preview.redd.it/my-recent-art-piece-a-humpback-whale-done-in-watercolour-v0-i4uahavgfzkc1.jpeg?auto=webp&s=e51d1e6b1ec05936b6995e2131074bc7624e7dd9",
+      "hp": 23,
+      "size": "huge",
+      "traits": ["Protector", "Whale", "Indestructible"]
+    }
+  ],
+  "cards": [
+    { "id": 1,  "owner": "beluga",   "type": "combat",  "attack": 4, "defense": 1 },
+    { "id": 2,  "owner": "humpback", "type": "combat",  "attack": 4, "defense": 1 },
+    { "id": 3,  "owner": "beluga",   "type": "combat",  "attack": 3, "defense": 2 },
+    { "id": 4,  "owner": "beluga",   "type": "combat",  "attack": 3, "defense": 3 },
+    { "id": 5,  "owner": "beluga",   "type": "combat",  "attack": 3, "defense": 3 },
+    { "id": 6,  "owner": "humpback", "type": "combat",  "attack": 3, "defense": 4 },
+    { "id": 7,  "owner": "beluga",   "type": "combat",  "attack": 3, "defense": 4 },
+    { "id": 8,  "owner": "beluga",   "type": "combat",  "attack": 3, "defense": 4 },
+    { "id": 9,  "owner": "humpback", "type": "combat",  "attack": 3, "defense": 4 },
+    { "id": 10, "owner": "beluga",   "type": "combat",  "attack": 3, "defense": 4 },
+    { "id": 11, "owner": "beluga",   "type": "combat",  "attack": 2, "defense": 5 },
+    { "id": 12, "owner": "beluga",   "type": "combat",  "attack": 2, "defense": 4 },
+    { "id": 13, "owner": "humpback", "type": "combat",  "attack": 2, "defense": 4 },
+    { "id": 14, "owner": "humpback", "type": "combat",  "attack": 2, "defense": 4 },
+    { "id": 15, "owner": "humpback", "type": "combat",  "attack": 0, "defense": 6 },
+    { "id": 16, "owner": "humpback", "type": "combat",  "attack": 0, "defense": 6 },
+
+    { "id": 17, "owner": "beluga",   "type": "special", "name": "Mystic Echo Pulse", "rulesText": "Deal 4 damage to an enemy within 6 squares." },
+    { "id": 18, "owner": "beluga",   "type": "special", "name": "Psychic Sonar", "rulesText": "Look at the top 3 cards of your deck, keep 1, return the rest in any order." },
+    { "id": 19, "owner": "beluga",   "type": "special", "name": "Breach & Splash", "rulesText": "Move up to 4 squares ignoring terrain; each enemy you pass through takes 3 damage." },
+    { "id": 20, "owner": "beluga",   "type": "special", "name": "Ocean Current Drift", "rulesText": "Teleport up to 5 squares and gain Hasted this turn." },
+    { "id": 21, "owner": "beluga",   "type": "special", "name": "Thunderous Clicks", "rulesText": "Stun an enemy within 4 squares and pull it 3 squares toward you." },
+    { "id": 22, "owner": "beluga",   "type": "special", "name": "Sonic Boom", "rulesText": "Deal 4 damage to all adjacent enemies; you take 1 damage." },
+    { "id": 23, "owner": "beluga",   "type": "special", "name": "Song of the White Whale", "rulesText": "Heal all allies within 3 squares for 3 HP and remove Immobilized." },
+
+    { "id": 24, "owner": "humpback", "type": "special", "name": "Tidal Shield", "rulesText": "Gain a 6-point shield and Armor." },
+    { "id": 25, "owner": "humpback", "type": "special", "name": "Bulk Interpose", "rulesText": "The next attack that would hit an adjacent ally hits you instead and damage is reduced by 2." },
+    { "id": 26, "owner": "humpback", "type": "special", "name": "Deep Breach Ram", "rulesText": "Move up to 3 squares in a straight line; deal 4 damage and push the target 2 squares." },
+    { "id": 27, "owner": "humpback", "type": "special", "name": "Harmonized Song", "rulesText": "Heal an ally within 3 squares for 3 HP." },
+    { "id": 28, "owner": "humpback", "type": "special", "name": "Ocean Colossus Stance", "rulesText": "Until your next turn you cannot be pushed/pulled and gain Fortified." },
+    { "id": 29, "owner": "humpback", "type": "special", "name": "Unyielding Mass", "rulesText": "Swap places with an ally within 4 squares; both gain Regenerating." },
+
+    { "id": 30, "owner": "beluga",  "type": "special", "name": "Tsunami Tandem", "rulesText": "Both figures move up to 3 squares; each then deals 3 damage to a different enemy they can see." }
+  ]
+}

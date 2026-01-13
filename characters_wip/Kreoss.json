@@ -1,0 +1,61 @@
+{
+    "id": "kreoss-deck",
+    "name": "High Exemplar Kreoss & Crusader Warjack",
+    "author": "Your Name",
+    "version": "1.0.0",
+    "description": "Star Wars Epic Duels–compatible deck for Warmachine’s High Exemplar Kreoss and his Crusader Warjack.",
+    "characters": [
+      {
+        "id": "kreoss",
+        "name": "High Exemplar Kreoss",
+        "imageUrl": "https://frontlinegaming.org/wp-content/uploads/2017/01/Kreoss.jpg",
+        "hp": 9,
+        "size": "medium",
+        "traits": ["Channeler", "Commander", "Divine"]
+      },
+      {
+        "id": "crusader",
+        "name": "Crusader Warjack",
+        "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP85Bgap9ZxFL7yjdpJnRq1S8VdzIOzSFe8YbhRE0y7yvdUecbs7KAUw8BMsyzsU8g3TxUyiba6ySB0lY9aLk3kmwgmu9U0hmvj0H3eQYIM2b6ZjV0jZXarMN5MNPE2T0ONmOi7WokdtA/s400/FireOfSalvation.jpg",
+        "hp": 17,
+        "size": "huge",
+        "traits": ["Titan", "Protector", "Cybernetic"]
+      }
+    ],  
+    "cards": [
+      { "id": 1,  "owner": "kreoss",   "type": "combat", "attack": 5, "defense": 1 },
+      { "id": 2,  "owner": "kreoss",   "type": "combat", "attack": 4, "defense": 1 },
+      { "id": 3,  "owner": "crusader", "type": "combat", "attack": 4, "defense": 1 },
+      { "id": 4,  "owner": "crusader", "type": "combat", "attack": 4, "defense": 1 },
+      { "id": 5,  "owner": "kreoss",   "type": "combat", "attack": 3, "defense": 1 },
+      { "id": 6,  "owner": "kreoss",   "type": "combat", "attack": 3, "defense": 1 },
+      { "id": 7,  "owner": "kreoss",   "type": "combat", "attack": 3, "defense": 1 },
+      { "id": 8,  "owner": "kreoss",   "type": "combat", "attack": 3, "defense": 1 },
+      { "id": 9,  "owner": "crusader", "type": "combat", "attack": 3, "defense": 2 },
+      { "id": 10, "owner": "crusader", "type": "combat", "attack": 2, "defense": 5 },
+      { "id": 11, "owner": "crusader", "type": "combat", "attack": 2, "defense": 5 },
+      { "id": 12, "owner": "crusader", "type": "combat", "attack": 2, "defense": 5 },
+      { "id": 13, "owner": "kreoss",   "type": "combat", "attack": 1, "defense": 5 },
+      { "id": 14, "owner": "kreoss",   "type": "combat", "attack": 1, "defense": 5 },
+      { "id": 15, "owner": "kreoss",   "type": "combat", "attack": 1, "defense": 5 },
+      { "id": 16, "owner": "crusader", "type": "combat", "attack": 1, "defense": 5 },
+  
+      { "id": 17,  "owner": "kreoss",   "type": "special", "name": "Cleansing Flame",        "rulesText": "Deal 4 damage to an adjacent enemy and inflict Bleeding." },
+      { "id": 18,  "owner": "kreoss",   "type": "special", "name": "Purging Blaze",          "rulesText": "Deal 3 damage to up to two enemies; they become Vulnerable." },
+      { "id": 19,  "owner": "kreoss",   "type": "special", "name": "Tactical Redeployment",  "rulesText": "Pull an ally 3 squares and look at the top 3 cards, keep 1." },
+      { "id": 20,  "owner": "kreoss",   "type": "special", "name": "Commanding Presence",    "rulesText": "An ally within 3 squares gains 1 additional action this turn." },
+      { "id": 21,  "owner": "kreoss",   "type": "special", "name": "Divine Barrier",         "rulesText": "Grant a 6-point shield to any ally." },
+      { "id": 22,  "owner": "kreoss",   "type": "special", "name": "Restorative Benediction","rulesText": "Heal an ally 4 HP and cleanse 1 condition." },
+      { "id": 23,  "owner": "kreoss",   "type": "special", "name": "Menoth's Fury",          "rulesText": "Deal 4 damage to every enemy in a 3-hex burst; all allies gain Empowered." },
+      { "id": 24,  "owner": "kreoss",   "type": "special", "name": "Rally the Faithful",     "rulesText": "Allies within 3 squares gain Focused." },
+      { "id": 25,  "owner": "kreoss",   "type": "special", "name": "Holy Might",             "rulesText": "Kreoss gains Empowered and Hasted until turn end." },
+  
+      { "id": 26,  "owner": "crusader", "type": "special", "name": "Titanic Slam",           "rulesText": "Pull one target 3 squares toward the Crusader and Stun it." },
+      { "id": 27,  "owner": "crusader", "type": "special", "name": "Bulwark Intercept",      "rulesText": "Play when Kreoss is attacked: cancel the attack; Crusader takes 2 damage." },
+      { "id": 28,  "owner": "crusader", "type": "special", "name": "Gyro-Pivot",             "rulesText": "Swap places with Kreoss within 4 squares." },
+      { "id": 29,  "owner": "crusader", "type": "special", "name": "Shielding Aura",         "rulesText": "Grant Kreoss Fortified." },
+  
+      { "id": 30,  "owner": "team",     "type": "special", "name": "Divine Convergence",     "rulesText": "Both figures gain Focused." }
+    ]
+  }
+  

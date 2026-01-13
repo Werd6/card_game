@@ -1,0 +1,52 @@
+{
+    "id": "mumen-rider-deck",
+    "name": "Mumen Rider Deck",
+    "author": "Werd Web Dev",
+    "model_used": "gpt-3o",
+    "version": "1.0.0",
+    "description": "Epic Duels–compatible deck for Mumen Rider (One Punch Man).",
+    "characters": [
+      {
+        "id": "mumen_rider",
+        "name": "Mumen Rider",
+        "imageUrl": "https://i.ytimg.com/vi/iphTh8-GMxI/maxresdefault.jpg",
+        "hp": 20,
+        "size": "medium",
+        "traits": ["Heroic", "Loner", "Underdog"]
+      }
+    ],
+    "cards": [
+      { "id": 1,  "owner": "mumen_rider", "type": "combat",  "attack": 5, "defense": 1 },
+      { "id": 2,  "owner": "mumen_rider", "type": "combat",  "attack": 4, "defense": 1 },
+      { "id": 3,  "owner": "mumen_rider", "type": "combat",  "attack": 4, "defense": 2 },
+      { "id": 4,  "owner": "mumen_rider", "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 5,  "owner": "mumen_rider", "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 6,  "owner": "mumen_rider", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 7,  "owner": "mumen_rider", "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 8,  "owner": "mumen_rider", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 9,  "owner": "mumen_rider", "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 10, "owner": "mumen_rider", "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 11, "owner": "mumen_rider", "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 12, "owner": "mumen_rider", "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 13, "owner": "mumen_rider", "type": "combat",  "attack": 1, "defense": 4 },
+      { "id": 14, "owner": "mumen_rider", "type": "combat",  "attack": 1, "defense": 3 },
+      { "id": 15, "owner": "mumen_rider", "type": "combat",  "attack": 1, "defense": 3 },
+      { "id": 16, "owner": "mumen_rider", "type": "combat",  "attack": 1, "defense": 3 },
+  
+      { "id": 17, "owner": "mumen_rider", "type": "special", "name": "Justice Crash",       "rulesText": "Leap 3 squares and deal 4 damage to an adjacent enemy." },
+      { "id": 18, "owner": "mumen_rider", "type": "special", "name": "Shield of Sacrifice", "rulesText": "Move 1 square and give an adjacent ally Armor and Fortified." },
+      { "id": 19, "owner": "mumen_rider", "type": "special", "name": "Stand Firm",          "rulesText": "Push each adjacent enemy 1 square and you gain Focused." },
+      { "id": 20, "owner": "mumen_rider", "type": "special", "name": "Solo Patrol",         "rulesText": "Move up to 6 squares ignoring terrain and draw 1 card." },
+      { "id": 21, "owner": "mumen_rider", "type": "special", "name": "Against All Odds",    "rulesText": "If no allies are within 4 squares, draw 2 cards and gain Empowered." },
+      { "id": 22, "owner": "mumen_rider", "type": "special", "name": "Determined Ride",     "rulesText": "Heal 3 HP and move 2 squares; if your HP is ≤ half, heal 5 instead." },
+      { "id": 23, "owner": "mumen_rider", "type": "special", "name": "Never Give Up",       "rulesText": "Cancel an attack against you and move 2 squares." },
+      { "id": 24, "owner": "mumen_rider", "type": "special", "name": "Last Stand",          "rulesText": "Deal 5 damage to the enemy that reduced you below 5 HP this round." },
+      { "id": 25, "owner": "mumen_rider", "type": "special", "name": "Inspire Hope",        "rulesText": "Allies within 3 squares heal 2 HP and gain Focused." },
+      { "id": 26, "owner": "mumen_rider", "type": "special", "name": "Cyclone Sweep",       "rulesText": "Move through up to 3 enemies; each takes 3 damage." },
+      { "id": 27, "owner": "mumen_rider", "type": "special", "name": "Ride Through Pain",   "rulesText": "Remove all negative conditions from yourself and gain Regenerating." },
+      { "id": 28, "owner": "mumen_rider", "type": "special", "name": "Defender's Heart",    "rulesText": "Give an adjacent ally Empowered and pull yourself 2 squares toward them." },
+      { "id": 29, "owner": "mumen_rider", "type": "special", "name": "Ride of Justice",     "rulesText": "Teleport anywhere, then deal 4 damage to up to three enemies and all allies heal 2 HP." },
+      { "id": 30, "owner": "mumen_rider", "type": "special", "name": "Quick U-Turn",        "rulesText": "Swap places with an enemy within 3 squares; that enemy is Stunned." }
+    ]
+  }
+  

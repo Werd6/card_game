@@ -1,0 +1,52 @@
+{
+  "id": "test-deck",
+  "name": "Test Character",
+  "author": "Test",
+  "version": "1.0.0",
+  "characters": [
+    {
+      "id": "test-char-1",
+      "name": "Test Character",
+      "imageUrl": "https://via.placeholder.com/150",
+      "hp": 15,
+      "size": "small",
+      "traits": [
+        "Test",
+        "Small",
+        "Fast"
+      ]
+    }
+  ],
+  "cards": [
+    { "id": 1,  "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 2,  "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 3,  "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 4,  "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 5,  "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 6,  "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 7,  "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 8,  "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 9,  "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 10, "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 11, "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 12, "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 13, "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 14, "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 15, "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 16, "type": "combat", "attack": 1, "defense": 1 },
+    { "id": 17, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 18, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 19, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 20, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 21, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 22, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 23, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 24, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 25, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 26, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 27, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 28, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 29, "type": "special", "name": "Test Special", "rulesText": "Test special card." },
+    { "id": 30, "type": "special", "name": "Test Special", "rulesText": "Test special card." }
+  ]
+} 

@@ -1,0 +1,61 @@
+{
+    "id": "xi-nred-vos-deck",
+    "name": "Xi-Nred & Vos",
+    "author": "ChatGPT",
+    "version": "1.0.0",
+    "description": "Epic Duels deck for Xi-Nred and Vos.",
+    "characters": [
+      {
+        "id": "xi-nred",
+        "name": "Xi-Nred",
+        "imageUrl": "https://placehold.co/150x150/1e293b/ffffff?text=XN",
+        "hp": 11,
+        "size": "medium",
+        "traits": ["Mystic", "Outcast", "Caster"]
+      },
+      {
+        "id": "vos",
+        "name": "Vos",
+        "imageUrl": "https://placehold.co/150x150/1e293b/ffffff?text=V",
+        "hp": 10,
+        "size": "medium",
+        "traits": ["Protector", "Tactician", "Wanderer"]
+      }
+    ],
+    "cards": [
+      { "id": 1, "owner": "xi-nred", "type": "combat", "attack": 5, "defense": 1 },
+      { "id": 2, "owner": "vos",     "type": "combat", "attack": 4, "defense": 1 },
+      { "id": 3, "owner": "xi-nred", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 4, "owner": "vos",     "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 5, "owner": "vos",     "type": "combat", "attack": 3, "defense": 2 },
+      { "id": 6, "owner": "xi-nred", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 7, "owner": "xi-nred", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 8, "owner": "vos",     "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 9, "owner": "xi-nred", "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 10, "owner": "vos",    "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 11, "owner": "xi-nred","type": "combat", "attack": 2, "defense": 3 },
+      { "id": 12, "owner": "xi-nred","type": "combat", "attack": 1, "defense": 3 },
+      { "id": 13, "owner": "vos",    "type": "combat", "attack": 1, "defense": 3 },
+      { "id": 14, "owner": "xi-nred","type": "combat", "attack": 1, "defense": 3 },
+      { "id": 15, "owner": "xi-nred","type": "combat", "attack": 1, "defense": 2 },
+      { "id": 16, "owner": "vos",    "type": "combat", "attack": 1, "defense": 4 },
+  
+      { "id": 17, "owner": "xi-nred", "type": "special", "name": "Whispering Gale",   "rulesText": "cost 1SP/1MP — Move up to 3 squares ignoring terrain; you become Stealthed until you attack or take damage." },
+      { "id": 18, "owner": "xi-nred", "type": "special", "name": "Elemental Pulse",   "rulesText": "cost 2PP/1MP — Deal 3 damage to an enemy within 4 squares and pull them 2 squares toward you." },
+      { "id": 19, "owner": "xi-nred", "type": "special", "name": "Solitary Vigil",    "rulesText": "cost 3SP — Look at the top 4 cards of your deck; add 2 to hand and return the rest in any order." },
+      { "id": 20, "owner": "xi-nred", "type": "special", "name": "Storm-Healer",      "rulesText": "cost 1PP/3SP — Heal an ally within 3 squares for 4 HP and grant Regenerating." },
+      { "id": 21, "owner": "xi-nred", "type": "special", "name": "Kinetic Burst",     "rulesText": "cost 2PP/1MP — Deal 4 damage to an adjacent enemy and push them 2 squares." },
+      { "id": 22, "owner": "xi-nred", "type": "special", "name": "Wind Step",         "rulesText": "cost 1SP/2MP — Swap places with an ally within 5 squares; both gain Hasted." },
+      { "id": 23, "owner": "xi-nred", "type": "special", "name": "Cyclone Convergence","rulesText": "cost 2PP/1SP/1MP — Deal 3 damage to each adjacent enemy, teleport up to 2 squares, and gain Armor." },
+      { "id": 24, "owner": "xi-nred", "type": "special", "name": "Invisible Currents","rulesText": "cost 1SP/2MP — Gain Stealthed and move up to 4 squares." },
+      { "id": 25, "owner": "xi-nred", "type": "special", "name": "Zephyr Shield",     "rulesText": "cost 2PP/2SP — Gain a 5-point shield; an ally within 2 squares gains Fortified." },
+  
+      { "id": 26, "owner": "vos", "type": "special", "name": "Shield Block",       "rulesText": "cost 1SP — Play when an ally within 2 squares is attacked: reduce that damage by 3." },
+      { "id": 27, "owner": "vos", "type": "special", "name": "Flanking Maneuver", "rulesText": "cost 1SP/2MP — An ally may move 2 squares; your next attack this turn deals +2 damage." },
+      { "id": 28, "owner": "vos", "type": "special", "name": "Silent Advance",    "rulesText": "cost 1SP/3MP — Move up to 4 squares ignoring enemy zones; gain Stealthed." },
+      { "id": 29, "owner": "vos", "type": "special", "name": "Guardian's Strike", "rulesText": "cost 1PP/1SP/1MP — Deal 3 damage to an adjacent enemy; an ally within 2 squares gains Armor." },
+  
+      { "id": 30, "owner": "xi-nred", "type": "special", "name": "Tandem Tempest", "rulesText": "cost 4SP/1MP — After either figure’s attack hits: teleport both Xi-Nred and Vos up to 3 squares each; all adjacent enemies are pushed 2 squares and become Stunned." }
+    ]
+  }
+  

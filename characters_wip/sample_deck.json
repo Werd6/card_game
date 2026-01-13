@@ -1,0 +1,33 @@
+{
+  "id": "sample-deck-1",
+  "name": "Sample Deck",
+  "author": "Test Author",
+  "version": "1.0.0",
+  "characters": [
+    {
+      "id": "sample-char-1",
+      "name": "Sample Character",
+      "hp": 22,
+      "size": "large",
+      "traits": [
+        "trait1",
+        "trait2",
+        "trait3"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "type": "combat",
+      "attack": 0,
+      "defense": 0
+    },
+    {
+      "id": 2,
+      "type": "special",
+      "name": "Empty Special",
+      "rulesText": "This is an empty special card"
+    }
+  ]
+} 

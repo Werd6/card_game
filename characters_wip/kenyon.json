@@ -1,0 +1,64 @@
+{
+    "id": "kenyon-slime-oozes-deck",
+    "name": "Kenyon & Slime Mold Oozes",
+    "author": "ChatGPT",
+    "version": "1.0.0",
+    "description": "Epic Duels deck for the mutant alchemist Kenyon and his slime-mold ooze swarm.",
+    "characters": [
+      {
+        "id": "kenyon",
+        "name": "Kenyon",
+        "imageUrl": "https://cdn.discordapp.com/attachments/707717046795763747/1391964923579465879/Screenshot_2025-07-07_at_9.11.32_PM.png?ex=686dcfdb&is=686c7e5b&hm=82bcd13cd07d5b45135230bdbaabd515bb1117b2559c12aa84c8cc43b559602f&",
+        "hp": 15,
+        "size": "medium",
+        "traits": ["Mutant", "Gadgeteer", "Graft Technician"],
+        "ranged": false
+      },
+      {
+        "id": "slime_mold_ooze",
+        "name": "Slime Mold Ooze",
+        "imageUrl": "https://cdn.discordapp.com/attachments/707717046795763747/1391966302289137714/Screenshot_2025-07-07_at_9.16.54_PM.png?ex=686dd123&is=686c7fa3&hm=fbec0c0c19d351d60a29e5631a018dd43ed97376b6cc35828f127e2575e0c256&",
+        "hp": 3,
+        "size": "small",
+        "traits": ["Ooze", "Swarm", "Terror"],
+        "minionCount": 3,
+        "ranged": false
+      }
+    ],
+    "cards": [
+      { "id": 1,  "owner": "kenyon",            "type": "combat",  "attack": 5, "defense": 1 },
+      { "id": 2,  "owner": "kenyon",            "type": "combat",  "attack": 4, "defense": 1 },
+      { "id": 3,  "owner": "kenyon",            "type": "combat",  "attack": 4, "defense": 2 },
+      { "id": 4,  "owner": "kenyon",            "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 5,  "owner": "kenyon",            "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 6,  "owner": "kenyon",            "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 7,  "owner": "kenyon",            "type": "combat",  "attack": 2, "defense": 4 },
+      { "id": 8,  "owner": "kenyon",            "type": "combat",  "attack": 1, "defense": 4 },
+      { "id": 9,  "owner": "slime_mold_ooze",   "type": "combat",  "attack": 3, "defense": 3 },
+      { "id": 10, "owner": "slime_mold_ooze",   "type": "combat",  "attack": 3, "defense": 2 },
+      { "id": 11, "owner": "slime_mold_ooze",   "type": "combat",  "attack": 2, "defense": 3 },
+      { "id": 12, "owner": "slime_mold_ooze",   "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 13, "owner": "slime_mold_ooze",   "type": "combat",  "attack": 2, "defense": 2 },
+      { "id": 14, "owner": "slime_mold_ooze",   "type": "combat",  "attack": 1, "defense": 3 },
+      { "id": 15, "owner": "slime_mold_ooze",   "type": "combat",  "attack": 1, "defense": 2 },
+      { "id": 16, "owner": "slime_mold_ooze",   "type": "combat",  "attack": 1, "defense": 2 },
+  
+      { "id": 17, "owner": "kenyon",            "type": "special", "name": "Mutagenic Burst",     "rulesText": "Deal 3 damage to all adjacent enemies; one target becomes Vulnerable. (cost 2PP/1SP)" },
+      { "id": 18, "owner": "kenyon",            "type": "special", "name": "Regenerative Serum",   "rulesText": "Heal Kenyon 4 HP and remove Bleeding. (cost 2PP/1SP)" },
+      { "id": 19, "owner": "kenyon",            "type": "special", "name": "Acid Bomb",            "rulesText": "Range 4 burst-1: 4 damage and Bleeding. (cost 2PP/1SP)" },
+      { "id": 20, "owner": "kenyon",            "type": "special", "name": "Smoke Vial",           "rulesText": "Place a 2×2 smoke cloud blocking LOS for 1 round. (cost 1MP)" },
+      { "id": 21, "owner": "kenyon",            "type": "special", "name": "Ooze Infusion",        "rulesText": "Summon one 3-HP Slime Mold Ooze adjacent to Kenyon. (cost 3PP)" },
+      { "id": 22, "owner": "kenyon",            "type": "special", "name": "Flesh Warp Shield",    "rulesText": "Gain a 6-point shield and Regenerating 1 round. (cost 2PP/1SP)" },
+      { "id": 23, "owner": "kenyon",            "type": "special", "name": "Master Transmogrifier","rulesText": "Attack +2 DMG, draw 2 cards, teleport 3 squares. (cost 3PP/2SP)" },
+  
+      { "id": 24, "owner": "slime_mold_ooze",   "type": "special", "name": "Dissolving Touch",     "rulesText": "Melee 4 damage; remove Armor/Fortified. (cost 2PP)" },
+      { "id": 25, "owner": "slime_mold_ooze",   "type": "special", "name": "Amorphous Dodge",      "rulesText": "Reaction: gain Phase-Shifted until turn end. (cost 1MP)" },
+      { "id": 26, "owner": "slime_mold_ooze",   "type": "special", "name": "Engulf",               "rulesText": "Pull, Immobilize, and victim discards 1 card. (cost 1MP/2SP)" },
+      { "id": 27, "owner": "slime_mold_ooze",   "type": "special", "name": "Creeping Over",        "rulesText": "Scry 3: keep 1, discard 1, return 1. (cost 2SP)" },
+      { "id": 28, "owner": "slime_mold_ooze",   "type": "special", "name": "Horrid Digest",        "rulesText": "Deal 2 damage and inflict Bleeding. (cost 1PP)" },
+      { "id": 29, "owner": "slime_mold_ooze",   "type": "special", "name": "Acidic Screech",       "rulesText": "Opponent discards 1 random card and is Vulnerable. (cost 2SP)" },
+  
+      { "id": 30, "owner": "kenyon",              "type": "special", "name": "Symbiotic Frenzy",     "rulesText": "Gain 1 extra action and Empowered this turn. (cost 2PP/3SP)" }
+    ]
+  }
+  

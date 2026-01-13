@@ -1,0 +1,60 @@
+{
+    "id": "greninja-froakies-deck",
+    "name": "Greninja & Froakies Deck",
+    "author": "Werd Web Dev",
+    "version": "1.0.0",
+    "description": "Epic Duels–compatible deck for Greninja and his Froakies minions.",
+    "characters": [
+      {
+        "id": "greninja",
+        "name": "Greninja",
+        "imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/658.png",
+        "hp": 11,
+        "size": "medium",
+        "traits": ["Ninja", "Ambusher", "Elementalist"]
+      },
+      {
+        "id": "froakie",
+        "name": "Froakie",
+        "imageUrl": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/656.png",
+        "hp": 3,
+        "size": "small",
+        "traits": ["Stealthy", "Bubbles", "Frog"],
+        "minionCount": 3
+      }
+    ],
+    "cards": [
+      { "id": 1,  "owner": "greninja", "type": "combat", "attack": 5, "defense": 1 },
+      { "id": 2,  "owner": "greninja", "type": "combat", "attack": 4, "defense": 1 },
+      { "id": 3,  "owner": "greninja", "type": "combat", "attack": 4, "defense": 1 },
+      { "id": 4,  "owner": "greninja", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 5,  "owner": "greninja", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 6,  "owner": "greninja", "type": "combat", "attack": 3, "defense": 2 },
+      { "id": 7,  "owner": "greninja", "type": "combat", "attack": 3, "defense": 2 },
+      { "id": 8,  "owner": "greninja", "type": "combat", "attack": 3, "defense": 2 },
+      { "id": 9,  "owner": "greninja", "type": "combat", "attack": 3, "defense": 2 },
+      { "id": 10, "owner": "froakie",  "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 11, "owner": "froakie",  "type": "combat", "attack": 2, "defense": 2 },
+      { "id": 12, "owner": "froakie",  "type": "combat", "attack": 2, "defense": 2 },
+      { "id": 13, "owner": "froakie",  "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 14, "owner": "froakie",  "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 15, "owner": "froakie",  "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 16, "owner": "froakie",  "type": "combat", "attack": 1, "defense": 3 },
+  
+      { "id": 17, "owner": "greninja", "type": "special", "name": "Water Dash",          "rulesText": "Move Greninja up to 3 spaces; enemies passed through take 1 damage." },
+      { "id": 18, "owner": "greninja", "type": "special", "name": "Mist Veil",           "rulesText": "Greninja becomes invisible until he attacks or is adjacent to an enemy; draw 1 card." },
+      { "id": 19, "owner": "greninja", "type": "special", "name": "Surprise Strike",     "rulesText": "Deal 3 damage to an adjacent enemy, then shift Greninja 1 space." },
+      { "id": 20, "owner": "greninja", "type": "special", "name": "Shadow Retreat",      "rulesText": "After Greninja is attacked, move him 2 spaces and the attacker discards 1 card." },
+      { "id": 21, "owner": "greninja", "type": "special", "name": "Hydro Cannon",        "rulesText": "Range 3: Deal 4 damage to one target or 2 damage to up to three targets." },
+      { "id": 22, "owner": "greninja", "type": "special", "name": "Freezing Torrent",    "rulesText": "Range 2: Deal 2 damage and Slow the target (they lose 1 action next turn)." },
+      { "id": 23, "owner": "greninja", "type": "special", "name": "Aerial Flip",         "rulesText": "Leap over an adjacent enemy, swap spaces, and draw 2 cards." },
+      { "id": 24, "owner": "greninja", "type": "special", "name": "Silent Snipe",        "rulesText": "Range 4: Deal 3 damage; if Greninja was unseen, deal +2 damage." },
+      { "id": 25, "owner": "greninja", "type": "special", "name": "Smoke Bomb",          "rulesText": "Cancel an attack that targets Greninja; then move him 1 space." },
+      { "id": 26, "owner": "greninja", "type": "special", "name": "Grand Water Spiral",  "rulesText": "Signature: Range 2, 5 damage, push the target 2 spaces, then Greninja moves 2 spaces." },
+      { "id": 27, "owner": "froakie",  "type": "special", "name": "Bubble Barrage",     "rulesText": "Each Froakie adjacent to an enemy deals 1 damage and pushes that enemy 1 space." },
+      { "id": 28, "owner": "froakie",  "type": "special", "name": "Leap Away",          "rulesText": "Each Froakie may move 2 spaces and may pass through enemies." },
+      { "id": 29, "owner": "froakie",  "type": "special", "name": "Tadpole Tactics",    "rulesText": "Choose a Froakie; it absorbs the next 2 damage dealt to Greninja this turn." },
+      { "id": 30, "owner": "greninja", "type": "special", "name": "Ninja Amphibian Assault", "rulesText": "Team-Up: Greninja and all Froakies move 2; Greninja deals 3 damage to one enemy; each Froakie deals 1 to a different adjacent enemy." }
+    ]
+  }
+  

@@ -1,0 +1,51 @@
+{
+    "id": "dio-orsius-deck",
+    "name": "Dio Orsius Deck",
+    "author": "Werd_Web_Dev",
+    "version": "1.0.0",
+    "description": "Epic Duels-compatible deck for Dio Orsius, the Soulforged Judge.",
+    "characters": [
+      {
+        "id": "dio",
+        "name": "Dio Orsius",
+        "imageUrl": "https://chatgpt.com/backend-api/public_content/enc/eyJpZCI6Im1fNjg2OWU3ZTEwNWJjODE5MWI3YjU4OTQ0MDAyYmVjZDA6ZmlsZV8wMDAwMDAwMDkxZWM2MWZiOGUwNjU4NjYwNTg3MzA5ZiIsInRzIjoiNDg2NjAzIiwicCI6InB5aSIsInNpZyI6IjhiMmUxZGQxZTYwNjBlODY4MTRlYmIyYjc1MmJkYmUyMzIyZjhjNjMxODcyNTI2NjQ3YWY5ZmFmYjBmYzhhZTgiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsfQ==",
+        "hp": 24,
+        "size": "medium",
+        "traits": ["Warrior", "Judge", "Soulforged"]
+      }
+    ],
+    "cards": [
+      { "id": 1, "owner": "dio", "type": "combat", "attack": 7, "defense": 0 },
+      { "id": 2, "owner": "dio", "type": "combat", "attack": 7, "defense": 0 },
+      { "id": 3, "owner": "dio", "type": "combat", "attack": 5, "defense": 2 },
+      { "id": 4, "owner": "dio", "type": "combat", "attack": 5, "defense": 1 },
+      { "id": 5, "owner": "dio", "type": "combat", "attack": 5, "defense": 1 },
+      { "id": 6, "owner": "dio", "type": "combat", "attack": 4, "defense": 3 },
+      { "id": 7, "owner": "dio", "type": "combat", "attack": 4, "defense": 3 },
+      { "id": 8, "owner": "dio", "type": "combat", "attack": 4, "defense": 3 },
+      { "id": 9, "owner": "dio", "type": "combat", "attack": 4, "defense": 3 },
+      { "id": 10, "owner": "dio", "type": "combat", "attack": 3, "defense": 4 },
+      { "id": 11, "owner": "dio", "type": "combat", "attack": 3, "defense": 4 },
+      { "id": 12, "owner": "dio", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 13, "owner": "dio", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 14, "owner": "dio", "type": "combat", "attack": 2, "defense": 4 },
+      { "id": 15, "owner": "dio", "type": "combat", "attack": 1, "defense": 5 },
+      { "id": 16, "owner": "dio", "type": "combat", "attack": 0, "defense": 7 },
+  
+      { "id": 17, "owner": "dio", "type": "special", "name": "Disciplined Strike", "rulesText": "Deal 4 damage to an adjacent enemy and gain Focused." },
+      { "id": 18, "owner": "dio", "type": "special", "name": "Shield Bash", "rulesText": "Deal 2 damage and push the target 2 squares." },
+      { "id": 19, "owner": "dio", "type": "special", "name": "Parry Stance", "rulesText": "Look at the top 3 cards of your deck, keep 1, return the rest in any order." },
+      { "id": 20, "owner": "dio", "type": "special", "name": "Mark of Judgment", "rulesText": "Target enemy becomes Vulnerable until your next turn." },
+      { "id": 21, "owner": "dio", "type": "special", "name": "Swift Sentence", "rulesText": "Teleport up to 3 squares; if you end adjacent to a Vulnerable enemy, deal 4 damage." },
+      { "id": 22, "owner": "dio", "type": "special", "name": "Justice’s Reprieve", "rulesText": "Reaction: cancel an attack on an ally; attacker takes 2 damage." },
+      { "id": 23, "owner": "dio", "type": "special", "name": "Soul Spear", "rulesText": "Deal 6 damage to an enemy within 6 squares." },
+      { "id": 24, "owner": "dio", "type": "special", "name": "Ethereal Shield", "rulesText": "Gain a 6-point shield that lasts until your next turn." },
+      { "id": 25, "owner": "dio", "type": "special", "name": "Spectral Step", "rulesText": "Gain Phase-Shifted until your next turn." },
+      { "id": 26, "owner": "dio", "type": "special", "name": "Coordinated Execution", "rulesText": "Pull a Vulnerable enemy 3 squares; if it collides with terrain it takes 3 damage." },
+      { "id": 27, "owner": "dio", "type": "special", "name": "Righteous Binding", "rulesText": "Enemy is Immobilized and Silenced until its next turn." },
+      { "id": 28, "owner": "dio", "type": "special", "name": "Guardian Aegis", "rulesText": "Heal 3 HP and gain Fortified." },
+      { "id": 29, "owner": "dio", "type": "special", "name": "Divine Verdict", "rulesText": "Opponent discards 1 random card and becomes Cursed." },
+      { "id": 30, "owner": "dio", "type": "special", "name": "Spirit Hook", "rulesText": "Pull one target 3 squares toward you." }
+    ]
+  }
+  
