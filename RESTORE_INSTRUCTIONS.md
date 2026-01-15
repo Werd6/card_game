@@ -63,3 +63,4 @@ Then follow Supabase's restore documentation.
 4. Run it
 5. Your app will work (tables created, but no old data)
 
+

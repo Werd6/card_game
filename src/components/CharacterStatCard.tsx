@@ -94,9 +94,10 @@ export const CharacterStatCard: React.FC<CharacterStatCardProps> = ({
 }) => {
   const { selectedCharacter, selectCharacter, updateCharacterConditions } = useGameStore();
   const isSelected = selectedCharacter?.id === character.id;
+  const isSpectator = gameInfo?.isSpectator ?? false;
 
   const handleHPChange = async (delta: number) => {
-    if (!channel || !gameInfo?.gameId) return;
+    if (isSpectator || !channel || !gameInfo?.gameId) return;
     
     const newHealth = Math.max(0, Math.min(character.maxHealth, character.health + delta));
     if (newHealth === character.health) return;
@@ -107,11 +108,12 @@ export const CharacterStatCard: React.FC<CharacterStatCardProps> = ({
   };
 
   const handleConditionsChange = async (newConditions: string[]) => {
-    if (!channel || !gameInfo?.gameId) return;
+    if (isSpectator || !channel || !gameInfo?.gameId) return;
     await updateCharacterConditions(character.id, newConditions, gameInfo.gameId, channel);
   };
 
   const handleCardClick = () => {
+    if (isSpectator) return;
     selectCharacter(isSelected ? null : character);
   };
 
@@ -232,7 +234,7 @@ export const CharacterStatCard: React.FC<CharacterStatCardProps> = ({
                     e.stopPropagation();
                     handleHPChange(-1);
                   }}
-                  disabled={character.health <= 0}
+                  disabled={isSpectator || character.health <= 0}
                   color="error"
                 >
                   <RemoveIcon />
@@ -244,7 +246,7 @@ export const CharacterStatCard: React.FC<CharacterStatCardProps> = ({
                     e.stopPropagation();
                     handleHPChange(1);
                   }}
-                  disabled={character.health >= character.maxHealth}
+                  disabled={isSpectator || character.health >= character.maxHealth}
                   color="success"
                 >
                   <AddIcon />
@@ -253,10 +255,12 @@ export const CharacterStatCard: React.FC<CharacterStatCardProps> = ({
             </Box>
           </Box>
         </ContentOverlay>
-        <ConditionsInput
-          conditions={character.conditions}
-          onChange={handleConditionsChange}
-        />
+        {!isSpectator && (
+          <ConditionsInput
+            conditions={character.conditions}
+            onChange={handleConditionsChange}
+          />
+        )}
       </Box>
     </StatCard>
   );

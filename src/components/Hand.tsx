@@ -27,6 +27,9 @@ export const Hand = ({ gameInfo, channel }: HandProps) => {
   const [rulesModalOpen, setRulesModalOpen] = useState(false);
   const [mapModalOpen, setMapModalOpen] = useState(false);
 
+  // Hide hand for spectators
+  if (gameInfo?.isSpectator) return null;
+
   const currentPlayer = players.find(p => p.id === gameInfo.playerId);
   const isHost = gameInfo?.isHost ?? false;
 

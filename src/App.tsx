@@ -45,6 +45,7 @@ interface GameInfo {
   gameId: string;
   playerId: string;
   isHost: boolean;
+  isSpectator?: boolean;
   roomCode?: string;
 }
 
@@ -134,7 +135,13 @@ function App() {
       if (game && game.state && typeof game.state === 'object') {
         console.log('Rejoining game, setting state from server:', game.state);
         setStateFromServer(game.state);
-        setInGame(true);
+        // Check if game has actually started (has players array with data)
+        if (game.state.players && Array.isArray(game.state.players) && game.state.players.length > 0) {
+          setInGame(true);
+        } else if (game.state === 'lobby') {
+          // Still in lobby, don't transition
+          setInGame(false);
+        }
       }
     };
 
@@ -195,11 +202,15 @@ function App() {
       },
     });
 
-    newChannel
+      newChannel
       .on('broadcast', { event: 'game_state_update' }, (message) => {
         console.log('Received game state broadcast:', message.payload);
         setStateFromServer(message.payload);
-        setInGame(true);
+        // Spectators and regular players auto-transition when game state is broadcast (game started)
+        // Check if the payload contains actual game state (not just 'lobby')
+        if (message.payload?.players && Array.isArray(message.payload.players) && message.payload.players.length > 0) {
+          setInGame(true);
+        }
       })
       .subscribe((status) => {
         if (status === 'SUBSCRIBED') {
@@ -393,12 +404,18 @@ function App() {
       // This should not happen if lobbyReady is true, but it's a good safeguard
       return <div>Loading...</div>;
     }
+    const isSpectator = gameInfo?.isSpectator ?? false;
     return (
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Container>
           <Typography variant="h4">Lobby</Typography>
           <Typography variant="body1">Room Code: {gameInfo?.roomCode}</Typography>
+          {isSpectator && (
+            <Typography variant="h6" color="primary" sx={{ mt: 2, mb: 2 }}>
+              Viewing as spectator - Couch Party Mode
+            </Typography>
+          )}
           <Typography variant="h6">Players:</Typography>
           <ul>
             {lobbyPlayers.map((p) => (
@@ -426,8 +443,11 @@ function App() {
               {!channel && <Typography variant="caption">Connecting to game server...</Typography>}
             </Box>
           )}
-          {!isHost && (
+          {!isHost && !isSpectator && (
             <Typography>Waiting for the host to start the game...</Typography>
+          )}
+          {isSpectator && (
+            <Typography>Waiting for the host to start the game. You will automatically transition to spectator view.</Typography>
           )}
         </Container>
       </ThemeProvider>
@@ -492,19 +512,9 @@ function App() {
             {gameInfo?.roomCode && (
               <Typography variant="h6">Room Code: <b>{gameInfo.roomCode}</b></Typography>
             )}
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-              <Button
-                variant="outlined"
-                href="https://example.com/prompts"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get prompts
-              </Button>
-              <IconButton onClick={colorMode.toggleColorMode} color="inherit">
-                {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
-              </IconButton>
-            </Box>
+            <IconButton onClick={colorMode.toggleColorMode} color="inherit">
+              {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+            </IconButton>
           </Box>
           <Tabs value={activeTab} onChange={handleTabChange}>
             <Tab label="Game" />
@@ -569,11 +579,18 @@ function App() {
                   </Button>
                 </Box>
               )}
-              {showSetup && !isHost && (
+              {showSetup && !isHost && !gameInfo?.isSpectator && (
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, mb: 2 }}>
                   <Typography variant="h6">Waiting for host to start the game...</Typography>
                   <Typography variant="body2" color="text.secondary">
                     Make sure all players have selected their decks.
+                  </Typography>
+                </Box>
+              )}
+              {gameInfo?.isSpectator && (
+                <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2 }}>
+                  <Typography variant="h5" color="primary" sx={{ fontWeight: 'bold' }}>
+                    🎮 Couch Party Mode - Spectator View
                   </Typography>
                 </Box>
               )}
@@ -589,7 +606,7 @@ function App() {
                   <Box sx={{ flexGrow: 1, overflow: 'auto', display: 'flex', justifyContent: 'center' }}>
                     <GameBoard gameInfo={gameInfo} channel={channel} />
                   </Box>
-                  <Hand gameInfo={gameInfo} channel={channel} />
+                  {!gameInfo?.isSpectator && <Hand gameInfo={gameInfo} channel={channel} />}
                 </Box>
                 <CharacterStatsPanel gameInfo={gameInfo} channel={channel} />
               </Box>

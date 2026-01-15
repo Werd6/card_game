@@ -91,9 +91,17 @@ export const GameBoard = ({ gameInfo, channel }: GameBoardProps) => {
   const [draggedId, setDraggedId] = useState<string | null>(null);
   const [dragOffset, setDragOffset] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [scale, setScale] = useState(1);
+  
+  const isSpectator = gameInfo?.isSpectator ?? false;
 
   // --- Drag Handlers for Absolute Positioning ---
   const handleDragStart = (event: React.DragEvent, characterId: string) => {
+    // Disable drag for spectators
+    if (isSpectator) {
+      event.preventDefault();
+      return;
+    }
+    
     console.log('Drag Start:', characterId);
     const character = characters.find(c => c.id === characterId);
     if (!character) {
@@ -118,6 +126,10 @@ export const GameBoard = ({ gameInfo, channel }: GameBoardProps) => {
   };
 
   const handleDragOver = (event: React.DragEvent) => {
+    // Disable drop for spectators
+    if (isSpectator) {
+      return;
+    }
     event.preventDefault();
     event.dataTransfer.dropEffect = 'move';
   };
@@ -167,6 +179,12 @@ export const GameBoard = ({ gameInfo, channel }: GameBoardProps) => {
   };
 
   const handleDrop = (event: React.DragEvent) => {
+    // Disable drop for spectators
+    if (isSpectator) {
+      event.preventDefault();
+      return;
+    }
+    
     event.preventDefault();
     if (!draggedId || !boardRef.current || !channel) return;
     
@@ -248,12 +266,13 @@ export const GameBoard = ({ gameInfo, channel }: GameBoardProps) => {
           {characters.map((character) => (
             <TokenContainer
               key={character.id}
-              draggable
+              draggable={!isSpectator}
               onDragStart={(e) => handleDragStart(e, character.id)}
               $size={character.size}
               style={{
                 left: character.position.x,
                 top: character.position.y,
+                cursor: isSpectator ? 'default' : 'grab',
               }}
             >
               <Token $isSelected={selectedCharacter?.id === character.id} $size={character.size}>
