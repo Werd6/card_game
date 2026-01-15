@@ -209,11 +209,19 @@ export function SupaGameLobby({ onGameReady }: SupaGameLobbyProps) {
       if (!player) throw new Error('Failed to create spectator player.');
       playerIdForCleanup = player.id;
 
-      setPlayerId(player.id);
-      setIsHost(false);
+      // Step 3: Update the game with the host player's ID (spectator is also the host)
+      const { error: gameUpdateError } = await supabase
+        .from('games')
+        .update({ host_id: player.id })
+        .eq('id', game.id);
       
-      // Step 3: Create gameInfo with isSpectator flag and skip deck selection
-      const gameInfo = { gameId: game.id, playerId: player.id, isHost: false, isSpectator: true, roomCode: game.room_code || game.id };
+      if (gameUpdateError) throw gameUpdateError;
+
+      setPlayerId(player.id);
+      setIsHost(true);
+      
+      // Step 4: Create gameInfo with isSpectator flag but isHost: true so they can start the game
+      const gameInfo = { gameId: game.id, playerId: player.id, isHost: true, isSpectator: true, roomCode: game.room_code || game.id };
       onGameReady(gameInfo); // Skip deck selection, go directly to lobby
     } catch (err: any) {
       // If anything fails, try to clean up the created records
