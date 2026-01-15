@@ -274,9 +274,18 @@ function App() {
     const initialCharacters: Character[] = [];
     
     // For each player in the lobby, create a Player object and their characters
-    fetchedLobbyPlayers.forEach((lobbyPlayer, playerIndex) => {
-      const deckId = lobbyPlayer.selected_deck || deckList[0]?.id;
-      const deckData = deckId ? decks[deckId] : undefined;
+    // Filter out spectators (players with names starting with "_")
+    const actualPlayers = fetchedLobbyPlayers.filter(p => !p.name.startsWith('_'));
+    
+    actualPlayers.forEach((lobbyPlayer, playerIndex) => {
+      const deckId = lobbyPlayer.selected_deck;
+      
+      if (!deckId) {
+        console.error(`No deck selected for player ${lobbyPlayer.name}`);
+        return;
+      }
+      
+      const deckData = decks[deckId];
       
       if (!deckData) {
         console.error(`No deck data found for player ${lobbyPlayer.name} with deck ID ${deckId}`);
@@ -572,7 +581,7 @@ function App() {
                       deckList.length === 0 || 
                       isStarting || 
                       lobbyPlayers.length === 0 ||
-                      lobbyPlayers.some(player => !player.selected_deck)
+                      lobbyPlayers.some(player => !player.name.startsWith('_') && !player.selected_deck)
                     }
                   >
                     {isStarting ? 'Starting...' : 'Begin Game'}
