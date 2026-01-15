@@ -1,0 +1,59 @@
+{
+    "id": "sung-jinwoo-igris-deck",
+    "name": "Sung Jinwoo & Igris",
+    "author": "Gemini",
+    "version": "1.0.0",
+    "description": "A high-tier deck featuring the Shadow Monarch's infinite growth and his loyal knight.",
+    "characters": [
+      {
+        "id": "hero",
+        "name": "Sung Jinwoo",
+        "imageUrl": "https://4kwallpapers.com/images/wallpapers/sung-jinwoo-dragon-2880x1800-15351.jpg",
+        "hp": 19,
+        "size": "medium",
+        "traits": ["Mastermind", "Relentless", "Caster"],
+        "ranged": false
+      },
+      {
+        "id": "companion",
+        "name": "Igris",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT23IdScj73QlGJnX2LgOnEtTdaMAjpw--8Tg&s",
+        "hp": 12,
+        "size": "large",
+        "traits": ["Warrior", "Undead", "Bonded"],
+        "ranged": false
+      }
+    ],
+    "cards": [
+      { "id": 1, "owner": "hero", "type": "combat", "attack": 6, "defense": 0 },
+      { "id": 2, "owner": "hero", "type": "combat", "attack": 6, "defense": 0 },
+      { "id": 3, "owner": "companion", "type": "combat", "attack": 0, "defense": 6 },
+      { "id": 4, "owner": "hero", "type": "combat", "attack": 5, "defense": 1 },
+      { "id": 5, "owner": "hero", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 6, "owner": "hero", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 7, "owner": "hero", "type": "combat", "attack": 4, "defense": 3 },
+      { "id": 8, "owner": "hero", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 9, "owner": "hero", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 10, "owner": "hero", "type": "combat", "attack": 3, "defense": 4 },
+      { "id": 11, "owner": "companion", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 12, "owner": "companion", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 13, "owner": "companion", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 14, "owner": "companion", "type": "combat", "attack": 3, "defense": 4 },
+      { "id": 15, "owner": "companion", "type": "combat", "attack": 2, "defense": 5 },
+      { "id": 16, "owner": "companion", "type": "combat", "attack": 2, "defense": 5 },
+      { "id": 17, "owner": "hero", "type": "special", "name": "Ruler’s Authority", "rulesText": "Pull one target up to 4 squares and they are Immobilized." },
+      { "id": 18, "owner": "hero", "type": "special", "name": "Tactical Command", "rulesText": "You and Igris each move 3 squares." },
+      { "id": 19, "owner": "hero", "type": "special", "name": "Daily Quest Completed", "rulesText": "Heal Jinwoo for 5 HP and remove one negative condition." },
+      { "id": 20, "owner": "hero", "type": "special", "name": "Murderous Intent", "rulesText": "Target enemy within 3 squares is Stunned and Vulnerable." },
+      { "id": 21, "owner": "hero", "type": "special", "name": "Shadow Extraction", "rulesText": "Summon two 3-HP Shadow Infantry minions adjacent to Jinwoo." },
+      { "id": 22, "owner": "hero", "type": "special", "name": "Domain of the Monarch", "rulesText": "All allies (including minions) are Empowered and Focused." },
+      { "id": 23, "owner": "hero", "type": "special", "name": "Monarch’s Ascension", "rulesText": "Deal 4 damage to all adjacent enemies; Jinwoo then swaps places with any Shadow ally." },
+      { "id": 24, "owner": "companion", "type": "special", "name": "Knight’s Fealty", "rulesText": "Deal 4 damage to an adjacent enemy." },
+      { "id": 25, "owner": "companion", "type": "special", "name": "Precision Strike", "rulesText": "Igris moves 3 squares and deals 3 damage to an adjacent enemy." },
+      { "id": 26, "owner": "companion", "type": "special", "name": "Unyielding Shadow", "rulesText": "Igris gains Armor and Regenerating." },
+      { "id": 27, "owner": "companion", "type": "special", "name": "Dark Regeneration", "rulesText": "Heal Igris for 4 HP." },
+      { "id": 28, "owner": "companion", "type": "special", "name": "Protector’s Vow", "rulesText": "Swap Jinwoo and Igris; the next attack against Jinwoo this round is cancelled." },
+      { "id": 29, "owner": "companion", "type": "special", "name": "Silent Vanguard", "rulesText": "Igris moves 5 squares and gains Fortified." },
+      { "id": 30, "owner": "hero", "type": "special", "name": "Shadow Exchange", "rulesText": "Jinwoo and Igris may both teleport up to 6 squares." }
+    ]
+  }

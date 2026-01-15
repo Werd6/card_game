@@ -1,0 +1,59 @@
+{
+    "id": "void-terrors-cho-kog",
+    "name": "Void Terrors: Cho'Gath & Kog'Maw",
+    "author": "Gemini",
+    "version": "1.0.0",
+    "description": "A high-durability vanguard paired with a glass-cannon artillery piece. Cho'Gath grows as the game progresses while Kog'Maw melts targets from afar.",
+    "characters": [
+      {
+        "id": "cho-gath",
+        "name": "Cho'Gath",
+        "imageUrl": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg",
+        "hp": 20,
+        "size": "Huge",
+        "traits": ["Juggernaut", "Monster", "Indestructible"],
+        "ranged": false
+      },
+      {
+        "id": "kog-maw",
+        "name": "Kog'Maw",
+        "imageUrl": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg",
+        "hp": 10,
+        "size": "medium",
+        "traits": ["Blaster", "Mutant", "Terror"],
+        "ranged": true
+      }
+    ],
+    "cards": [
+      { "id": 1, "owner": "cho-gath", "type": "combat", "attack": 5, "defense": 1 },
+      { "id": 2, "owner": "cho-gath", "type": "combat", "attack": 4, "defense": 1 },
+      { "id": 3, "owner": "cho-gath", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 4, "owner": "cho-gath", "type": "combat", "attack": 3, "defense": 2 },
+      { "id": 5, "owner": "cho-gath", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 6, "owner": "cho-gath", "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 7, "owner": "cho-gath", "type": "combat", "attack": 2, "defense": 4 },
+      { "id": 8, "owner": "cho-gath", "type": "combat", "attack": 1, "defense": 5 },
+      { "id": 9, "owner": "cho-gath", "type": "combat", "attack": 1, "defense": 4 },
+      { "id": 10, "owner": "kog-maw", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 11, "owner": "kog-maw", "type": "combat", "attack": 3, "defense": 2 },
+      { "id": 12, "owner": "kog-maw", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 13, "owner": "kog-maw", "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 14, "owner": "kog-maw", "type": "combat", "attack": 2, "defense": 4 },
+      { "id": 15, "owner": "kog-maw", "type": "combat", "attack": 2, "defense": 3 },
+      { "id": 16, "owner": "kog-maw", "type": "combat", "attack": 1, "defense": 3 },
+      { "id": 17, "owner": "cho-gath", "type": "special", "name": "Feast", "rulesText": "Deal 4 damage to an adjacent enemy; if this defeats them, Cho'Gath heals 4 HP." },
+      { "id": 18, "owner": "cho-gath", "type": "special", "name": "Rupture", "rulesText": "Deal 1 damage to all enemies in a 2-hex line; those hit are Stunned." },
+      { "id": 19, "owner": "cho-gath", "type": "special", "name": "Feral Scream", "rulesText": "Deal 1 damage to all adjacent enemies and they are Silenced." },
+      { "id": 20, "owner": "cho-gath", "type": "special", "name": "Vorpal Spikes", "rulesText": "Cho'Gath’s next attack this turn deals +2 damage." },
+      { "id": 21, "owner": "cho-gath", "type": "special", "name": "Stoneplate", "rulesText": "Gain Armor and a 2-point shield that absorbs the next damage taken." },
+      { "id": 22, "owner": "cho-gath", "type": "special", "name": "Void Carapace", "rulesText": "Heal Cho'Gath for 4 HP and gain Fortified." },
+      { "id": 23, "owner": "cho-gath", "type": "special", "name": "Feast of Worlds", "rulesText": "Deal 5 damage to an adjacent enemy; Cho'Gath gains +1 to all future Defense values (max +3)." },
+      { "id": 24, "owner": "kog-maw", "type": "special", "name": "Living Artillery", "rulesText": "Deal 3 damage to an enemy up to 5 squares away." },
+      { "id": 25, "owner": "kog-maw", "type": "special", "name": "Caustic Spittle", "rulesText": "Deal 2 damage to an adjacent enemy and they become Vulnerable." },
+      { "id": 26, "owner": "kog-maw", "type": "special", "name": "Bio-Arcane Barrage", "rulesText": "Kog'Maw’s ranged attacks this turn have +2 range and +1 damage." },
+      { "id": 27, "owner": "kog-maw", "type": "special", "name": "Void Ooze", "rulesText": "Push an adjacent enemy 3 squares and they become Immobilized." },
+      { "id": 28, "owner": "kog-maw", "type": "special", "name": "Icathian Surprise", "rulesText": "Play only when Kog'Maw is defeated: deal 4 damage to all enemies within 2 squares." },
+      { "id": 29, "owner": "kog-maw", "type": "special", "name": "Caustic Trail", "rulesText": "Kog'Maw moves up to 3 squares and may move through enemy figures." },
+      { "id": 30, "owner": "hero", "type": "special", "name": "Void Infestation", "rulesText": "Cho'Gath and Kog'Maw may each move up to 2 squares; Cho'Gath may Push any adjacent enemies 1 square." }
+    ]
+  }
