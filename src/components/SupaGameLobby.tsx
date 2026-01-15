@@ -28,6 +28,7 @@ interface GameInfo {
   gameId: string;
   playerId: string;
   isHost: boolean;
+  isSpectator?: boolean;
   roomCode?: string;
 }
 
@@ -125,7 +126,8 @@ export function SupaGameLobby({ onGameReady }: SupaGameLobbyProps) {
       if (existingPlayer) {
         // Player exists, this is a rejoin attempt.
         console.log('Player found, rejoining game...');
-        const gameInfo = { gameId: game.id, playerId: existingPlayer.id, isHost: game.host_id === existingPlayer.id, roomCode: game.room_code };
+        const isSpectator = existingPlayer.name.startsWith('_');
+        const gameInfo = { gameId: game.id, playerId: existingPlayer.id, isHost: game.host_id === existingPlayer.id, isSpectator, roomCode: game.room_code };
         onGameReady(gameInfo); // Directly move to game
         return;
       }
@@ -178,6 +180,49 @@ export function SupaGameLobby({ onGameReady }: SupaGameLobbyProps) {
     setTempGameInfo(null);
   };
 
+  const handleCouchPartyMode = async () => {
+    setError('');
+    let gameIdForCleanup: string | null = null;
+    let playerIdForCleanup: string | null = null;
+
+    try {
+      // Step 1: Create the game record.
+      const { data: game, error: gameError } = await supabase
+        .from('games')
+        .insert({ state: 'lobby' })
+        .select()
+        .single();
+
+      if (gameError) throw gameError;
+      if (!game) throw new Error('Failed to create game.');
+      gameIdForCleanup = game.id;
+
+      // Step 2: Create the spectator player record with "_" prefix.
+      const spectatorName = playerName.startsWith('_') ? playerName : `_${playerName}`;
+      const { data: player, error: playerError } = await supabase
+        .from('players')
+        .insert({ name: spectatorName, game_id: game.id })
+        .select()
+        .single();
+      
+      if (playerError) throw playerError;
+      if (!player) throw new Error('Failed to create spectator player.');
+      playerIdForCleanup = player.id;
+
+      setPlayerId(player.id);
+      setIsHost(false);
+      
+      // Step 3: Create gameInfo with isSpectator flag and skip deck selection
+      const gameInfo = { gameId: game.id, playerId: player.id, isHost: false, isSpectator: true, roomCode: game.room_code || game.id };
+      onGameReady(gameInfo); // Skip deck selection, go directly to lobby
+    } catch (err: any) {
+      // If anything fails, try to clean up the created records
+      if (playerIdForCleanup) await supabase.from('players').delete().eq('id', playerIdForCleanup);
+      if (gameIdForCleanup) await supabase.from('games').delete().eq('id', gameIdForCleanup);
+      setError(err.message || 'Failed to create couch party mode.');
+    }
+  };
+
   if (showDeckSelection) {
     return (
       <ThemeProvider theme={darkTheme}>
@@ -227,6 +272,9 @@ export function SupaGameLobby({ onGameReady }: SupaGameLobbyProps) {
             />
             <Button fullWidth variant="outlined" onClick={handleJoinGame} disabled={!playerName || !roomCode} size="large">
               Join Game
+            </Button>
+            <Button fullWidth variant="outlined" onClick={handleCouchPartyMode} disabled={!playerName} size="large">
+              Couch party mode
             </Button>
             <Button
               fullWidth
