@@ -1,0 +1,65 @@
+{
+    "id": "dio-the-world-deck",
+    "name": "DIO & The World",
+    "author": "Gemini",
+    "version": "1.0.0",
+    "description": "A high-power, high-ego deck focused on vampiric survival and overwhelming Stand strikes within stopped time.",
+    "characters": [
+      {
+        "id": "dio",
+        "name": "DIO",
+        "hp": 17,
+        "size": "medium",
+        "traits": [
+          "Villainous",
+          "Mastermind",
+          "Indestructible"
+        ],
+        "ranged": true
+      },
+      {
+        "id": "the-world",
+        "name": "The World",
+        "hp": 12,
+        "size": "medium",
+        "traits": [
+          "Bonded",
+          "Juggernaut",
+          "Isolated"
+        ],
+        "ranged": false
+      }
+    ],
+    "cards": [
+      { "id": 1, "owner": "dio", "type": "combat", "attack": 5, "defense": 1 },
+      { "id": 2, "owner": "dio", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 3, "owner": "dio", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 4, "owner": "dio", "type": "combat", "attack": 3, "defense": 4 },
+      { "id": 5, "owner": "dio", "type": "combat", "attack": 3, "defense": 4 },
+      { "id": 6, "owner": "dio", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 7, "owner": "dio", "type": "combat", "attack": 2, "defense": 4 },
+      { "id": 8, "owner": "dio", "type": "combat", "attack": 2, "defense": 4 },
+      { "id": 9, "owner": "dio", "type": "combat", "attack": 1, "defense": 5 },
+      { "id": 10, "owner": "the-world", "type": "combat", "attack": 5, "defense": 1 },
+      { "id": 11, "owner": "the-world", "type": "combat", "attack": 4, "defense": 2 },
+      { "id": 12, "owner": "the-world", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 13, "owner": "the-world", "type": "combat", "attack": 3, "defense": 3 },
+      { "id": 14, "owner": "the-world", "type": "combat", "attack": 2, "defense": 4 },
+      { "id": 15, "owner": "the-world", "type": "combat", "attack": 2, "defense": 4 },
+      { "id": 16, "owner": "the-world", "type": "combat", "attack": 0, "defense": 6 },
+      { "id": 17, "owner": "dio", "type": "special", "name": "A Mere Monkey", "rulesText": "Deal 3 damage to an adjacent enemy." },
+      { "id": 18, "owner": "dio", "type": "special", "name": "Kono DIO Da!", "rulesText": "Deal 1 damage to every enemy in a 3-hex burst." },
+      { "id": 19, "owner": "dio", "type": "special", "name": "The Cairo Network", "rulesText": "Look at the top 3 cards of your deck, keep 1, and return the rest in any order." },
+      { "id": 20, "owner": "dio", "type": "special", "name": "Checkmate", "rulesText": "One opponent discards 1 random card and you teleport DIO up to 3 squares." },
+      { "id": 21, "owner": "dio", "type": "special", "name": "Vampiric Regeneration", "rulesText": "DIO heals 2 HP and removes one Bleeding token." },
+      { "id": 22, "owner": "dio", "type": "special", "name": "Space Ripper Stingy Eyes", "rulesText": "Deal 2 damage to an enemy within 6 squares." },
+      { "id": 23, "owner": "dio", "type": "special", "name": "The World: Time, Stop!", "rulesText": "DIO gains 1 additional action this turn." },
+      { "id": 24, "owner": "the-world", "type": "special", "name": "Shared Perception", "rulesText": "Swap DIO and The World's positions if they are within 5 squares of each other." },
+      { "id": 25, "owner": "the-world", "type": "special", "name": "Stand Shield", "rulesText": "The World gains Armor (reduce the next incoming damage by 3)." },
+      { "id": 26, "owner": "the-world", "type": "special", "name": "MUDA MUDA MUDA!", "rulesText": "Deal 3 damage to an adjacent enemy." },
+      { "id": 27, "owner": "the-world", "type": "special", "name": "Crushing Blow", "rulesText": "Pull one target 3 squares toward The World and deal 1 damage." },
+      { "id": 28, "owner": "the-world", "type": "special", "name": "The Ultimate Stand", "rulesText": "The World gains Focused (the next attack this turn deals +2 damage)." },
+      { "id": 29, "owner": "the-world", "type": "special", "name": "Beyond Human Limits", "rulesText": "Play when The World is attacked: cancel the attack and deal 1 damage back." },
+      { "id": 30, "owner": "dio", "type": "special", "name": "The Greatest High", "rulesText": "DIO heals 2 HP and both DIO and The World may move up to 2 squares." }
+    ]
+  }
