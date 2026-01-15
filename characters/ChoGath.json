@@ -10,7 +10,7 @@
         "name": "Cho'Gath",
         "imageUrl": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg",
         "hp": 20,
-        "size": "Huge",
+        "size": "large",
         "traits": ["Juggernaut", "Monster", "Indestructible"],
         "ranged": false
       },
